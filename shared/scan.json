@@ -1,5 +1,6 @@
 {
   "scan_path": "demo_data",
+<<<<<<< HEAD
   "emails": [
     "sarah.wilson@company.com",
     "john.doe@gmail.com",
@@ -187,26 +188,87 @@
       "kind": "software",
       "value": "Adobe Photoshop Lightroom Classic 10.0 (Macintosh)"
     },
+=======
+
+  "emails": [
+    "john.doe@gmail.com"
+  ],
+
+  "phones": [
+    "6060520161",
+    "6060520202",
+    "+91 9876543210"
+  ],
+
+  "aadhaars": [
+    "1234 5678 9012"
+  ],
+
+  "urls": [
+    "https://secure-bank.example"
+  ],
+
+  "documents": [
+    "..\\demo_data\\customer.txt",
+    "..\\demo_data\\fake_profile (1).pdf",
+    "..\\demo_data\\fake_profile.pdf"
+  ],
+
+  "photos": [
+    "..\\demo_data\\screenshot.jpeg"
+  ],
+
+  "gps": [],
+
+  "cookies": [
+    {
+      "browser": "Edge",
+      "error": "[Errno 13] Permission denied"
+    },
+    {
+      "browser": "Chrome",
+      "error": "[Errno 13] Permission denied"
+    }
+  ],
+
+  "raw_findings": [
+
+>>>>>>> 155a4fb3eddbbb44466d3dd42b55385904ae957a
     {
       "source_file": "..\\demo_data\\customer.txt",
       "kind": "email",
       "value": "john.doe@gmail.com"
     },
+<<<<<<< HEAD
     {
       "source_file": "..\\demo_data\\customer.txt",
       "kind": "phone",
       "value": "9876543210"
     },
+=======
+
+    {
+      "source_file": "..\\demo_data\\customer.txt",
+      "kind": "phone",
+      "value": "+91 9876543210"
+    },
+
+>>>>>>> 155a4fb3eddbbb44466d3dd42b55385904ae957a
     {
       "source_file": "..\\demo_data\\customer.txt",
       "kind": "aadhaar",
       "value": "1234 5678 9012"
     },
+<<<<<<< HEAD
+=======
+
+>>>>>>> 155a4fb3eddbbb44466d3dd42b55385904ae957a
     {
       "source_file": "..\\demo_data\\customer.txt",
       "kind": "url",
       "value": "https://secure-bank.example"
     },
+<<<<<<< HEAD
     {
       "source_file": "..\\demo_data\\customer.txt",
       "kind": "token",
@@ -277,5 +339,20 @@
       "kind": "software",
       "value": "Adobe Photoshop Lightroom Classic 10.0 (Macintosh)"
     }
+=======
+
+    {
+      "source_file": "..\\demo_data\\fake_profile (1).pdf",
+      "kind": "phone",
+      "value": "6060520202"
+    },
+
+    {
+      "source_file": "..\\demo_data\\fake_profile.pdf",
+      "kind": "phone",
+      "value": "6060520161"
+    }
+
+>>>>>>> 155a4fb3eddbbb44466d3dd42b55385904ae957a
   ]
 }

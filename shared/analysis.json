@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "privacy_score": 100,
   "risk_score": 61,
   "risk_level": "Medium",
@@ -1293,4 +1294,25 @@
       "action": "review file and remove unnecessary personal data"
     }
   ]
+=======
+    "summary": {
+        "total_files": 4,
+        "total_findings": 6
+    },
+    "risk_score": 38,
+    "risk_level": "MEDIUM",
+    "digital_twin": {
+        "traveler": false,
+        "student": true,
+        "financial_activity": "HIGH",
+        "profile": "Social / Active User"
+    },
+    "attack_paths": [
+        "Account Recovery Risk"
+    ],
+    "recommendations": [
+        "Encrypt sensitive documents",
+        "Enable 2FA on linked accounts"
+    ]
+>>>>>>> 155a4fb3eddbbb44466d3dd42b55385904ae957a
 }
