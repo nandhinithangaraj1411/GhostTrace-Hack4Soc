@@ -1,0 +1,12 @@
+Customer Record
+
+Name: John Doe
+Email: john.doe@gmail.com
+Phone: 9876543210
+Aadhaar: 1234 5678 9012
+
+Website:
+https://secure-bank.example
+
+API Token:
+sk_test_ABCDEF1234567890

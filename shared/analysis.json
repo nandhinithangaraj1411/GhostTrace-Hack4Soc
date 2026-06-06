@@ -1,0 +1,1296 @@
+{
+  "privacy_score": 100,
+  "risk_score": 61,
+  "risk_level": "Medium",
+  "summary": {
+    "total_files": 11,
+    "total_findings": 30
+  },
+  "findings": [
+    {
+      "source_file": "..\\demo_data\\book.jpg",
+      "kind": "camera_make",
+      "value": "SONY",
+      "category": "device",
+      "risk": 7
+    },
+    {
+      "source_file": "..\\demo_data\\book.jpg",
+      "kind": "camera_model",
+      "value": "ILCE-7M2",
+      "category": "device",
+      "risk": 7
+    },
+    {
+      "source_file": "..\\demo_data\\book.jpg",
+      "kind": "timestamp",
+      "value": "2020:11:22 09:41:39",
+      "category": "behavioral",
+      "risk": 5
+    },
+    {
+      "source_file": "..\\demo_data\\book.jpg",
+      "kind": "software",
+      "value": "Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
+      "category": "device",
+      "risk": 4
+    },
+    {
+      "source_file": "..\\demo_data\\city.jpg",
+      "kind": "camera_make",
+      "value": "SONY",
+      "category": "device",
+      "risk": 7
+    },
+    {
+      "source_file": "..\\demo_data\\city.jpg",
+      "kind": "camera_model",
+      "value": "ILCE-7M2",
+      "category": "device",
+      "risk": 7
+    },
+    {
+      "source_file": "..\\demo_data\\city.jpg",
+      "kind": "timestamp",
+      "value": "2020:11:21 15:54:31",
+      "category": "behavioral",
+      "risk": 5
+    },
+    {
+      "source_file": "..\\demo_data\\city.jpg",
+      "kind": "software",
+      "value": "Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
+      "category": "device",
+      "risk": 4
+    },
+    {
+      "source_file": "..\\demo_data\\city2.jpg",
+      "kind": "camera_make",
+      "value": "SONY",
+      "category": "device",
+      "risk": 7
+    },
+    {
+      "source_file": "..\\demo_data\\city2.jpg",
+      "kind": "camera_model",
+      "value": "ILCE-7M2",
+      "category": "device",
+      "risk": 7
+    },
+    {
+      "source_file": "..\\demo_data\\city2.jpg",
+      "kind": "timestamp",
+      "value": "2020:11:21 13:25:33",
+      "category": "behavioral",
+      "risk": 5
+    },
+    {
+      "source_file": "..\\demo_data\\city2.jpg",
+      "kind": "software",
+      "value": "Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
+      "category": "device",
+      "risk": 4
+    },
+    {
+      "source_file": "..\\demo_data\\customer.txt",
+      "kind": "email",
+      "value": "john.doe@gmail.com",
+      "category": "identity",
+      "risk": 8
+    },
+    {
+      "source_file": "..\\demo_data\\customer.txt",
+      "kind": "phone",
+      "value": "9876543210",
+      "category": "contact",
+      "risk": 6
+    },
+    {
+      "source_file": "..\\demo_data\\customer.txt",
+      "kind": "aadhaar",
+      "value": "1234 5678 9012",
+      "category": "government_id",
+      "risk": 20
+    },
+    {
+      "source_file": "..\\demo_data\\customer.txt",
+      "kind": "url",
+      "value": "https://secure-bank.example",
+      "category": "behavioral",
+      "risk": 5
+    },
+    {
+      "source_file": "..\\demo_data\\customer.txt",
+      "kind": "token",
+      "value": "sk_test_ABCDEF1234567890",
+      "category": "credentials",
+      "risk": 22
+    },
+    {
+      "source_file": "..\\demo_data\\employee.docx",
+      "kind": "email",
+      "value": "sarah.wilson@company.com",
+      "category": "identity",
+      "risk": 8
+    },
+    {
+      "source_file": "..\\demo_data\\employee.docx",
+      "kind": "phone",
+      "value": "9988776655",
+      "category": "contact",
+      "risk": 6
+    },
+    {
+      "source_file": "..\\demo_data\\employee.docx",
+      "kind": "phone",
+      "value": "9123456789",
+      "category": "contact",
+      "risk": 6
+    },
+    {
+      "source_file": "..\\demo_data\\employee.docx",
+      "kind": "token",
+      "value": "ghp_ABCD123456789XYZ987",
+      "category": "credentials",
+      "risk": 22
+    },
+    {
+      "source_file": "..\\demo_data\\fake_profile (1).pdf",
+      "kind": "phone",
+      "value": "1234567890",
+      "category": "contact",
+      "risk": 6
+    },
+    {
+      "source_file": "..\\demo_data\\fake_profile (1).pdf",
+      "kind": "aadhaar",
+      "value": "1234 5678 9012",
+      "category": "government_id",
+      "risk": 20
+    },
+    {
+      "source_file": "..\\demo_data\\fake_profile.pdf",
+      "kind": "email",
+      "value": "priyanka.kapor@example.com",
+      "category": "identity",
+      "risk": 8
+    },
+    {
+      "source_file": "..\\demo_data\\fake_profile.pdf",
+      "kind": "phone",
+      "value": "9876543210",
+      "category": "contact",
+      "risk": 6
+    },
+    {
+      "source_file": "..\\demo_data\\fake_profile.pdf",
+      "kind": "aadhaar",
+      "value": "1234 5678 9012",
+      "category": "government_id",
+      "risk": 20
+    },
+    {
+      "source_file": "..\\demo_data\\squirrel.jpg",
+      "kind": "camera_make",
+      "value": "FUJIFILM",
+      "category": "device",
+      "risk": 7
+    },
+    {
+      "source_file": "..\\demo_data\\squirrel.jpg",
+      "kind": "camera_model",
+      "value": "X100F",
+      "category": "device",
+      "risk": 7
+    },
+    {
+      "source_file": "..\\demo_data\\squirrel.jpg",
+      "kind": "timestamp",
+      "value": "2020:11:20 15:46:49",
+      "category": "behavioral",
+      "risk": 5
+    },
+    {
+      "source_file": "..\\demo_data\\squirrel.jpg",
+      "kind": "software",
+      "value": "Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
+      "category": "device",
+      "risk": 4
+    }
+  ],
+  "attack_paths": [
+    "Email \u2192 Phishing \u2192 Credential Theft",
+    "Phone \u2192 Smishing \u2192 Social Engineering",
+    "Aadhaar \u2192 Identity Theft \u2192 KYC Fraud",
+    "Token Exposure \u2192 Unauthorized Access",
+    "Cookie Theft \u2192 Session Hijacking"
+  ],
+  "recommendations": [
+    {
+      "issue": "Email Exposure",
+      "action": "Remove email addresses from public documents",
+      "reason": "Reduces phishing risk"
+    },
+    {
+      "issue": "Phone Exposure",
+      "action": "Redact phone numbers before sharing",
+      "reason": "Prevents smishing attacks"
+    },
+    {
+      "issue": "Aadhaar Exposure",
+      "action": "Mask Aadhaar numbers",
+      "reason": "Prevents identity theft"
+    },
+    {
+      "issue": "API Token Exposure",
+      "action": "Rotate exposed tokens",
+      "reason": "Prevents unauthorized access"
+    },
+    {
+      "issue": "Browser Cookie Exposure",
+      "action": "Clear unnecessary cookies",
+      "reason": "Reduces tracking and session abuse"
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "id": "profile_1",
+        "label": "Digital Shadow",
+        "type": "profile"
+      },
+      {
+        "id": "file_0_..\\demo_data\\book.jpg",
+        "label": "..\\demo_data\\book.jpg",
+        "type": "file"
+      },
+      {
+        "id": "data_0_camera_make_SONY",
+        "label": "SONY",
+        "type": "data"
+      },
+      {
+        "id": "file_1_..\\demo_data\\book.jpg",
+        "label": "..\\demo_data\\book.jpg",
+        "type": "file"
+      },
+      {
+        "id": "data_1_camera_model_ILCE-7M2",
+        "label": "ILCE-7M2",
+        "type": "data"
+      },
+      {
+        "id": "file_2_..\\demo_data\\book.jpg",
+        "label": "..\\demo_data\\book.jpg",
+        "type": "file"
+      },
+      {
+        "id": "data_2_timestamp_2020:11:22 09:41:39",
+        "label": "2020:11:22 09:41:39",
+        "type": "data"
+      },
+      {
+        "id": "file_3_..\\demo_data\\book.jpg",
+        "label": "..\\demo_data\\book.jpg",
+        "type": "file"
+      },
+      {
+        "id": "data_3_software_Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
+        "label": "Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
+        "type": "data"
+      },
+      {
+        "id": "file_4_..\\demo_data\\city.jpg",
+        "label": "..\\demo_data\\city.jpg",
+        "type": "file"
+      },
+      {
+        "id": "data_4_camera_make_SONY",
+        "label": "SONY",
+        "type": "data"
+      },
+      {
+        "id": "file_5_..\\demo_data\\city.jpg",
+        "label": "..\\demo_data\\city.jpg",
+        "type": "file"
+      },
+      {
+        "id": "data_5_camera_model_ILCE-7M2",
+        "label": "ILCE-7M2",
+        "type": "data"
+      },
+      {
+        "id": "file_6_..\\demo_data\\city.jpg",
+        "label": "..\\demo_data\\city.jpg",
+        "type": "file"
+      },
+      {
+        "id": "data_6_timestamp_2020:11:21 15:54:31",
+        "label": "2020:11:21 15:54:31",
+        "type": "data"
+      },
+      {
+        "id": "file_7_..\\demo_data\\city.jpg",
+        "label": "..\\demo_data\\city.jpg",
+        "type": "file"
+      },
+      {
+        "id": "data_7_software_Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
+        "label": "Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
+        "type": "data"
+      },
+      {
+        "id": "file_8_..\\demo_data\\city2.jpg",
+        "label": "..\\demo_data\\city2.jpg",
+        "type": "file"
+      },
+      {
+        "id": "data_8_camera_make_SONY",
+        "label": "SONY",
+        "type": "data"
+      },
+      {
+        "id": "file_9_..\\demo_data\\city2.jpg",
+        "label": "..\\demo_data\\city2.jpg",
+        "type": "file"
+      },
+      {
+        "id": "data_9_camera_model_ILCE-7M2",
+        "label": "ILCE-7M2",
+        "type": "data"
+      },
+      {
+        "id": "file_10_..\\demo_data\\city2.jpg",
+        "label": "..\\demo_data\\city2.jpg",
+        "type": "file"
+      },
+      {
+        "id": "data_10_timestamp_2020:11:21 13:25:33",
+        "label": "2020:11:21 13:25:33",
+        "type": "data"
+      },
+      {
+        "id": "file_11_..\\demo_data\\city2.jpg",
+        "label": "..\\demo_data\\city2.jpg",
+        "type": "file"
+      },
+      {
+        "id": "data_11_software_Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
+        "label": "Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
+        "type": "data"
+      },
+      {
+        "id": "file_12_..\\demo_data\\customer.txt",
+        "label": "..\\demo_data\\customer.txt",
+        "type": "file"
+      },
+      {
+        "id": "data_12_email_john.doe@gmail.com",
+        "label": "john.doe@gmail.com",
+        "type": "data"
+      },
+      {
+        "id": "file_13_..\\demo_data\\customer.txt",
+        "label": "..\\demo_data\\customer.txt",
+        "type": "file"
+      },
+      {
+        "id": "data_13_phone_9876543210",
+        "label": "9876543210",
+        "type": "data"
+      },
+      {
+        "id": "file_14_..\\demo_data\\customer.txt",
+        "label": "..\\demo_data\\customer.txt",
+        "type": "file"
+      },
+      {
+        "id": "data_14_aadhaar_1234 5678 9012",
+        "label": "1234 5678 9012",
+        "type": "data"
+      },
+      {
+        "id": "file_15_..\\demo_data\\customer.txt",
+        "label": "..\\demo_data\\customer.txt",
+        "type": "file"
+      },
+      {
+        "id": "data_15_url_https://secure-bank.example",
+        "label": "https://secure-bank.example",
+        "type": "data"
+      },
+      {
+        "id": "file_16_..\\demo_data\\customer.txt",
+        "label": "..\\demo_data\\customer.txt",
+        "type": "file"
+      },
+      {
+        "id": "data_16_token_sk_test_ABCDEF1234567890",
+        "label": "sk_test_ABCDEF1234567890",
+        "type": "data"
+      },
+      {
+        "id": "file_17_..\\demo_data\\employee.docx",
+        "label": "..\\demo_data\\employee.docx",
+        "type": "file"
+      },
+      {
+        "id": "data_17_email_sarah.wilson@company.com",
+        "label": "sarah.wilson@company.com",
+        "type": "data"
+      },
+      {
+        "id": "file_18_..\\demo_data\\employee.docx",
+        "label": "..\\demo_data\\employee.docx",
+        "type": "file"
+      },
+      {
+        "id": "data_18_phone_9988776655",
+        "label": "9988776655",
+        "type": "data"
+      },
+      {
+        "id": "file_19_..\\demo_data\\employee.docx",
+        "label": "..\\demo_data\\employee.docx",
+        "type": "file"
+      },
+      {
+        "id": "data_19_phone_9123456789",
+        "label": "9123456789",
+        "type": "data"
+      },
+      {
+        "id": "file_20_..\\demo_data\\employee.docx",
+        "label": "..\\demo_data\\employee.docx",
+        "type": "file"
+      },
+      {
+        "id": "data_20_token_ghp_ABCD123456789XYZ987",
+        "label": "ghp_ABCD123456789XYZ987",
+        "type": "data"
+      },
+      {
+        "id": "file_21_..\\demo_data\\fake_profile (1).pdf",
+        "label": "..\\demo_data\\fake_profile (1).pdf",
+        "type": "file"
+      },
+      {
+        "id": "data_21_phone_1234567890",
+        "label": "1234567890",
+        "type": "data"
+      },
+      {
+        "id": "file_22_..\\demo_data\\fake_profile (1).pdf",
+        "label": "..\\demo_data\\fake_profile (1).pdf",
+        "type": "file"
+      },
+      {
+        "id": "data_22_aadhaar_1234 5678 9012",
+        "label": "1234 5678 9012",
+        "type": "data"
+      },
+      {
+        "id": "file_23_..\\demo_data\\fake_profile.pdf",
+        "label": "..\\demo_data\\fake_profile.pdf",
+        "type": "file"
+      },
+      {
+        "id": "data_23_email_priyanka.kapor@example.com",
+        "label": "priyanka.kapor@example.com",
+        "type": "data"
+      },
+      {
+        "id": "file_24_..\\demo_data\\fake_profile.pdf",
+        "label": "..\\demo_data\\fake_profile.pdf",
+        "type": "file"
+      },
+      {
+        "id": "data_24_phone_9876543210",
+        "label": "9876543210",
+        "type": "data"
+      },
+      {
+        "id": "file_25_..\\demo_data\\fake_profile.pdf",
+        "label": "..\\demo_data\\fake_profile.pdf",
+        "type": "file"
+      },
+      {
+        "id": "data_25_aadhaar_1234 5678 9012",
+        "label": "1234 5678 9012",
+        "type": "data"
+      },
+      {
+        "id": "file_26_..\\demo_data\\squirrel.jpg",
+        "label": "..\\demo_data\\squirrel.jpg",
+        "type": "file"
+      },
+      {
+        "id": "data_26_camera_make_FUJIFILM",
+        "label": "FUJIFILM",
+        "type": "data"
+      },
+      {
+        "id": "file_27_..\\demo_data\\squirrel.jpg",
+        "label": "..\\demo_data\\squirrel.jpg",
+        "type": "file"
+      },
+      {
+        "id": "data_27_camera_model_X100F",
+        "label": "X100F",
+        "type": "data"
+      },
+      {
+        "id": "file_28_..\\demo_data\\squirrel.jpg",
+        "label": "..\\demo_data\\squirrel.jpg",
+        "type": "file"
+      },
+      {
+        "id": "data_28_timestamp_2020:11:20 15:46:49",
+        "label": "2020:11:20 15:46:49",
+        "type": "data"
+      },
+      {
+        "id": "file_29_..\\demo_data\\squirrel.jpg",
+        "label": "..\\demo_data\\squirrel.jpg",
+        "type": "file"
+      },
+      {
+        "id": "data_29_software_Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
+        "label": "Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
+        "type": "data"
+      }
+    ],
+    "edges": [
+      {
+        "source": "file_0_..\\demo_data\\book.jpg",
+        "target": "data_0_camera_make_SONY",
+        "label": "contains"
+      },
+      {
+        "source": "data_0_camera_make_SONY",
+        "target": "profile_1",
+        "label": "device"
+      },
+      {
+        "source": "file_1_..\\demo_data\\book.jpg",
+        "target": "data_1_camera_model_ILCE-7M2",
+        "label": "contains"
+      },
+      {
+        "source": "data_1_camera_model_ILCE-7M2",
+        "target": "profile_1",
+        "label": "device"
+      },
+      {
+        "source": "file_2_..\\demo_data\\book.jpg",
+        "target": "data_2_timestamp_2020:11:22 09:41:39",
+        "label": "contains"
+      },
+      {
+        "source": "data_2_timestamp_2020:11:22 09:41:39",
+        "target": "profile_1",
+        "label": "behavioral"
+      },
+      {
+        "source": "file_3_..\\demo_data\\book.jpg",
+        "target": "data_3_software_Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
+        "label": "contains"
+      },
+      {
+        "source": "data_3_software_Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
+        "target": "profile_1",
+        "label": "device"
+      },
+      {
+        "source": "file_4_..\\demo_data\\city.jpg",
+        "target": "data_4_camera_make_SONY",
+        "label": "contains"
+      },
+      {
+        "source": "data_4_camera_make_SONY",
+        "target": "profile_1",
+        "label": "device"
+      },
+      {
+        "source": "file_5_..\\demo_data\\city.jpg",
+        "target": "data_5_camera_model_ILCE-7M2",
+        "label": "contains"
+      },
+      {
+        "source": "data_5_camera_model_ILCE-7M2",
+        "target": "profile_1",
+        "label": "device"
+      },
+      {
+        "source": "file_6_..\\demo_data\\city.jpg",
+        "target": "data_6_timestamp_2020:11:21 15:54:31",
+        "label": "contains"
+      },
+      {
+        "source": "data_6_timestamp_2020:11:21 15:54:31",
+        "target": "profile_1",
+        "label": "behavioral"
+      },
+      {
+        "source": "file_7_..\\demo_data\\city.jpg",
+        "target": "data_7_software_Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
+        "label": "contains"
+      },
+      {
+        "source": "data_7_software_Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
+        "target": "profile_1",
+        "label": "device"
+      },
+      {
+        "source": "file_8_..\\demo_data\\city2.jpg",
+        "target": "data_8_camera_make_SONY",
+        "label": "contains"
+      },
+      {
+        "source": "data_8_camera_make_SONY",
+        "target": "profile_1",
+        "label": "device"
+      },
+      {
+        "source": "file_9_..\\demo_data\\city2.jpg",
+        "target": "data_9_camera_model_ILCE-7M2",
+        "label": "contains"
+      },
+      {
+        "source": "data_9_camera_model_ILCE-7M2",
+        "target": "profile_1",
+        "label": "device"
+      },
+      {
+        "source": "file_10_..\\demo_data\\city2.jpg",
+        "target": "data_10_timestamp_2020:11:21 13:25:33",
+        "label": "contains"
+      },
+      {
+        "source": "data_10_timestamp_2020:11:21 13:25:33",
+        "target": "profile_1",
+        "label": "behavioral"
+      },
+      {
+        "source": "file_11_..\\demo_data\\city2.jpg",
+        "target": "data_11_software_Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
+        "label": "contains"
+      },
+      {
+        "source": "data_11_software_Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
+        "target": "profile_1",
+        "label": "device"
+      },
+      {
+        "source": "file_12_..\\demo_data\\customer.txt",
+        "target": "data_12_email_john.doe@gmail.com",
+        "label": "contains"
+      },
+      {
+        "source": "data_12_email_john.doe@gmail.com",
+        "target": "profile_1",
+        "label": "identity"
+      },
+      {
+        "source": "file_13_..\\demo_data\\customer.txt",
+        "target": "data_13_phone_9876543210",
+        "label": "contains"
+      },
+      {
+        "source": "data_13_phone_9876543210",
+        "target": "profile_1",
+        "label": "contact"
+      },
+      {
+        "source": "file_14_..\\demo_data\\customer.txt",
+        "target": "data_14_aadhaar_1234 5678 9012",
+        "label": "contains"
+      },
+      {
+        "source": "data_14_aadhaar_1234 5678 9012",
+        "target": "profile_1",
+        "label": "government_id"
+      },
+      {
+        "source": "file_15_..\\demo_data\\customer.txt",
+        "target": "data_15_url_https://secure-bank.example",
+        "label": "contains"
+      },
+      {
+        "source": "data_15_url_https://secure-bank.example",
+        "target": "profile_1",
+        "label": "behavioral"
+      },
+      {
+        "source": "file_16_..\\demo_data\\customer.txt",
+        "target": "data_16_token_sk_test_ABCDEF1234567890",
+        "label": "contains"
+      },
+      {
+        "source": "data_16_token_sk_test_ABCDEF1234567890",
+        "target": "profile_1",
+        "label": "credentials"
+      },
+      {
+        "source": "file_17_..\\demo_data\\employee.docx",
+        "target": "data_17_email_sarah.wilson@company.com",
+        "label": "contains"
+      },
+      {
+        "source": "data_17_email_sarah.wilson@company.com",
+        "target": "profile_1",
+        "label": "identity"
+      },
+      {
+        "source": "file_18_..\\demo_data\\employee.docx",
+        "target": "data_18_phone_9988776655",
+        "label": "contains"
+      },
+      {
+        "source": "data_18_phone_9988776655",
+        "target": "profile_1",
+        "label": "contact"
+      },
+      {
+        "source": "file_19_..\\demo_data\\employee.docx",
+        "target": "data_19_phone_9123456789",
+        "label": "contains"
+      },
+      {
+        "source": "data_19_phone_9123456789",
+        "target": "profile_1",
+        "label": "contact"
+      },
+      {
+        "source": "file_20_..\\demo_data\\employee.docx",
+        "target": "data_20_token_ghp_ABCD123456789XYZ987",
+        "label": "contains"
+      },
+      {
+        "source": "data_20_token_ghp_ABCD123456789XYZ987",
+        "target": "profile_1",
+        "label": "credentials"
+      },
+      {
+        "source": "file_21_..\\demo_data\\fake_profile (1).pdf",
+        "target": "data_21_phone_1234567890",
+        "label": "contains"
+      },
+      {
+        "source": "data_21_phone_1234567890",
+        "target": "profile_1",
+        "label": "contact"
+      },
+      {
+        "source": "file_22_..\\demo_data\\fake_profile (1).pdf",
+        "target": "data_22_aadhaar_1234 5678 9012",
+        "label": "contains"
+      },
+      {
+        "source": "data_22_aadhaar_1234 5678 9012",
+        "target": "profile_1",
+        "label": "government_id"
+      },
+      {
+        "source": "file_23_..\\demo_data\\fake_profile.pdf",
+        "target": "data_23_email_priyanka.kapor@example.com",
+        "label": "contains"
+      },
+      {
+        "source": "data_23_email_priyanka.kapor@example.com",
+        "target": "profile_1",
+        "label": "identity"
+      },
+      {
+        "source": "file_24_..\\demo_data\\fake_profile.pdf",
+        "target": "data_24_phone_9876543210",
+        "label": "contains"
+      },
+      {
+        "source": "data_24_phone_9876543210",
+        "target": "profile_1",
+        "label": "contact"
+      },
+      {
+        "source": "file_25_..\\demo_data\\fake_profile.pdf",
+        "target": "data_25_aadhaar_1234 5678 9012",
+        "label": "contains"
+      },
+      {
+        "source": "data_25_aadhaar_1234 5678 9012",
+        "target": "profile_1",
+        "label": "government_id"
+      },
+      {
+        "source": "file_26_..\\demo_data\\squirrel.jpg",
+        "target": "data_26_camera_make_FUJIFILM",
+        "label": "contains"
+      },
+      {
+        "source": "data_26_camera_make_FUJIFILM",
+        "target": "profile_1",
+        "label": "device"
+      },
+      {
+        "source": "file_27_..\\demo_data\\squirrel.jpg",
+        "target": "data_27_camera_model_X100F",
+        "label": "contains"
+      },
+      {
+        "source": "data_27_camera_model_X100F",
+        "target": "profile_1",
+        "label": "device"
+      },
+      {
+        "source": "file_28_..\\demo_data\\squirrel.jpg",
+        "target": "data_28_timestamp_2020:11:20 15:46:49",
+        "label": "contains"
+      },
+      {
+        "source": "data_28_timestamp_2020:11:20 15:46:49",
+        "target": "profile_1",
+        "label": "behavioral"
+      },
+      {
+        "source": "file_29_..\\demo_data\\squirrel.jpg",
+        "target": "data_29_software_Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
+        "label": "contains"
+      },
+      {
+        "source": "data_29_software_Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
+        "target": "profile_1",
+        "label": "device"
+      }
+    ]
+  },
+  "timeline": [
+    {
+      "time": 0,
+      "event": "sensitive_data_found",
+      "source_file": "..\\demo_data\\book.jpg",
+      "details": "camera_make: SONY"
+    },
+    {
+      "time": 0,
+      "event": "sensitive_data_found",
+      "source_file": "..\\demo_data\\book.jpg",
+      "details": "camera_model: ILCE-7M2"
+    },
+    {
+      "time": 0,
+      "event": "sensitive_data_found",
+      "source_file": "..\\demo_data\\book.jpg",
+      "details": "timestamp: 2020:11:22 09:41:39"
+    },
+    {
+      "time": 0,
+      "event": "sensitive_data_found",
+      "source_file": "..\\demo_data\\book.jpg",
+      "details": "software: Adobe Photoshop Lightroom Classic 10.0 (Macintosh)"
+    },
+    {
+      "time": 0,
+      "event": "sensitive_data_found",
+      "source_file": "..\\demo_data\\city.jpg",
+      "details": "camera_make: SONY"
+    },
+    {
+      "time": 0,
+      "event": "sensitive_data_found",
+      "source_file": "..\\demo_data\\city.jpg",
+      "details": "camera_model: ILCE-7M2"
+    },
+    {
+      "time": 0,
+      "event": "sensitive_data_found",
+      "source_file": "..\\demo_data\\city.jpg",
+      "details": "timestamp: 2020:11:21 15:54:31"
+    },
+    {
+      "time": 0,
+      "event": "sensitive_data_found",
+      "source_file": "..\\demo_data\\city.jpg",
+      "details": "software: Adobe Photoshop Lightroom Classic 10.0 (Macintosh)"
+    },
+    {
+      "time": 0,
+      "event": "sensitive_data_found",
+      "source_file": "..\\demo_data\\city2.jpg",
+      "details": "camera_make: SONY"
+    },
+    {
+      "time": 0,
+      "event": "sensitive_data_found",
+      "source_file": "..\\demo_data\\city2.jpg",
+      "details": "camera_model: ILCE-7M2"
+    },
+    {
+      "time": 0,
+      "event": "sensitive_data_found",
+      "source_file": "..\\demo_data\\city2.jpg",
+      "details": "timestamp: 2020:11:21 13:25:33"
+    },
+    {
+      "time": 0,
+      "event": "sensitive_data_found",
+      "source_file": "..\\demo_data\\city2.jpg",
+      "details": "software: Adobe Photoshop Lightroom Classic 10.0 (Macintosh)"
+    },
+    {
+      "time": 0,
+      "event": "sensitive_data_found",
+      "source_file": "..\\demo_data\\customer.txt",
+      "details": "email: john.doe@gmail.com"
+    },
+    {
+      "time": 0,
+      "event": "sensitive_data_found",
+      "source_file": "..\\demo_data\\customer.txt",
+      "details": "phone: 9876543210"
+    },
+    {
+      "time": 0,
+      "event": "sensitive_data_found",
+      "source_file": "..\\demo_data\\customer.txt",
+      "details": "aadhaar: 1234 5678 9012"
+    },
+    {
+      "time": 0,
+      "event": "sensitive_data_found",
+      "source_file": "..\\demo_data\\customer.txt",
+      "details": "url: https://secure-bank.example"
+    },
+    {
+      "time": 0,
+      "event": "sensitive_data_found",
+      "source_file": "..\\demo_data\\customer.txt",
+      "details": "token: sk_test_ABCDEF1234567890"
+    },
+    {
+      "time": 0,
+      "event": "sensitive_data_found",
+      "source_file": "..\\demo_data\\employee.docx",
+      "details": "email: sarah.wilson@company.com"
+    },
+    {
+      "time": 0,
+      "event": "sensitive_data_found",
+      "source_file": "..\\demo_data\\employee.docx",
+      "details": "phone: 9988776655"
+    },
+    {
+      "time": 0,
+      "event": "sensitive_data_found",
+      "source_file": "..\\demo_data\\employee.docx",
+      "details": "phone: 9123456789"
+    },
+    {
+      "time": 0,
+      "event": "sensitive_data_found",
+      "source_file": "..\\demo_data\\employee.docx",
+      "details": "token: ghp_ABCD123456789XYZ987"
+    },
+    {
+      "time": 0,
+      "event": "sensitive_data_found",
+      "source_file": "..\\demo_data\\fake_profile (1).pdf",
+      "details": "phone: 1234567890"
+    },
+    {
+      "time": 0,
+      "event": "sensitive_data_found",
+      "source_file": "..\\demo_data\\fake_profile (1).pdf",
+      "details": "aadhaar: 1234 5678 9012"
+    },
+    {
+      "time": 0,
+      "event": "sensitive_data_found",
+      "source_file": "..\\demo_data\\fake_profile.pdf",
+      "details": "email: priyanka.kapor@example.com"
+    },
+    {
+      "time": 0,
+      "event": "sensitive_data_found",
+      "source_file": "..\\demo_data\\fake_profile.pdf",
+      "details": "phone: 9876543210"
+    },
+    {
+      "time": 0,
+      "event": "sensitive_data_found",
+      "source_file": "..\\demo_data\\fake_profile.pdf",
+      "details": "aadhaar: 1234 5678 9012"
+    },
+    {
+      "time": 0,
+      "event": "sensitive_data_found",
+      "source_file": "..\\demo_data\\squirrel.jpg",
+      "details": "camera_make: FUJIFILM"
+    },
+    {
+      "time": 0,
+      "event": "sensitive_data_found",
+      "source_file": "..\\demo_data\\squirrel.jpg",
+      "details": "camera_model: X100F"
+    },
+    {
+      "time": 0,
+      "event": "sensitive_data_found",
+      "source_file": "..\\demo_data\\squirrel.jpg",
+      "details": "timestamp: 2020:11:20 15:46:49"
+    },
+    {
+      "time": 0,
+      "event": "sensitive_data_found",
+      "source_file": "..\\demo_data\\squirrel.jpg",
+      "details": "software: Adobe Photoshop Lightroom Classic 10.0 (Macintosh)"
+    },
+    {
+      "time": 1780673030.0728972,
+      "event": "file_scanned",
+      "source_file": "..\\demo_data\\fake_profile (1).pdf",
+      "details": "fake_profile (1).pdf"
+    },
+    {
+      "time": 1780677593.4240148,
+      "event": "file_scanned",
+      "source_file": "..\\demo_data\\customer.txt",
+      "details": "customer.txt"
+    },
+    {
+      "time": 1780680359.4152367,
+      "event": "file_scanned",
+      "source_file": "..\\demo_data\\~$ployee.docx",
+      "details": "~$ployee.docx"
+    },
+    {
+      "time": 1780680401.4384658,
+      "event": "file_scanned",
+      "source_file": "..\\demo_data\\employee.docx",
+      "details": "employee.docx"
+    },
+    {
+      "time": 1780691376.601133,
+      "event": "file_scanned",
+      "source_file": "..\\demo_data\\fake_profile.pdf",
+      "details": "fake_profile.pdf"
+    },
+    {
+      "time": 1780692002.7939217,
+      "event": "file_scanned",
+      "source_file": "..\\demo_data\\images.jpg",
+      "details": "images.jpg"
+    },
+    {
+      "time": 1780692040.3941746,
+      "event": "file_scanned",
+      "source_file": "..\\demo_data\\squirrel.jpg",
+      "details": "squirrel.jpg"
+    },
+    {
+      "time": 1780692082.7565882,
+      "event": "file_scanned",
+      "source_file": "..\\demo_data\\city.jpg",
+      "details": "city.jpg"
+    },
+    {
+      "time": 1780692350.2414877,
+      "event": "file_scanned",
+      "source_file": "..\\demo_data\\book.jpg",
+      "details": "book.jpg"
+    },
+    {
+      "time": 1780692366.1847405,
+      "event": "file_scanned",
+      "source_file": "..\\demo_data\\city2.jpg",
+      "details": "city2.jpg"
+    },
+    {
+      "time": 1780701968.9935038,
+      "event": "file_scanned",
+      "source_file": "..\\demo_data\\sample1.jpeg",
+      "details": "sample1.jpeg"
+    }
+  ],
+  "remediations": [
+    {
+      "source_file": "..\\demo_data\\book.jpg",
+      "kind": "camera_make",
+      "category": "device",
+      "action": "review file and remove unnecessary personal data"
+    },
+    {
+      "source_file": "..\\demo_data\\book.jpg",
+      "kind": "camera_model",
+      "category": "device",
+      "action": "review file and remove unnecessary personal data"
+    },
+    {
+      "source_file": "..\\demo_data\\book.jpg",
+      "kind": "timestamp",
+      "category": "behavioral",
+      "action": "review file and remove unnecessary personal data"
+    },
+    {
+      "source_file": "..\\demo_data\\book.jpg",
+      "kind": "software",
+      "category": "device",
+      "action": "review file and remove unnecessary personal data"
+    },
+    {
+      "source_file": "..\\demo_data\\city.jpg",
+      "kind": "camera_make",
+      "category": "device",
+      "action": "review file and remove unnecessary personal data"
+    },
+    {
+      "source_file": "..\\demo_data\\city.jpg",
+      "kind": "camera_model",
+      "category": "device",
+      "action": "review file and remove unnecessary personal data"
+    },
+    {
+      "source_file": "..\\demo_data\\city.jpg",
+      "kind": "timestamp",
+      "category": "behavioral",
+      "action": "review file and remove unnecessary personal data"
+    },
+    {
+      "source_file": "..\\demo_data\\city.jpg",
+      "kind": "software",
+      "category": "device",
+      "action": "review file and remove unnecessary personal data"
+    },
+    {
+      "source_file": "..\\demo_data\\city2.jpg",
+      "kind": "camera_make",
+      "category": "device",
+      "action": "review file and remove unnecessary personal data"
+    },
+    {
+      "source_file": "..\\demo_data\\city2.jpg",
+      "kind": "camera_model",
+      "category": "device",
+      "action": "review file and remove unnecessary personal data"
+    },
+    {
+      "source_file": "..\\demo_data\\city2.jpg",
+      "kind": "timestamp",
+      "category": "behavioral",
+      "action": "review file and remove unnecessary personal data"
+    },
+    {
+      "source_file": "..\\demo_data\\city2.jpg",
+      "kind": "software",
+      "category": "device",
+      "action": "review file and remove unnecessary personal data"
+    },
+    {
+      "source_file": "..\\demo_data\\customer.txt",
+      "kind": "email",
+      "category": "identity",
+      "action": "review file and remove unnecessary personal data"
+    },
+    {
+      "source_file": "..\\demo_data\\customer.txt",
+      "kind": "phone",
+      "category": "contact",
+      "action": "review and minimize exposure"
+    },
+    {
+      "source_file": "..\\demo_data\\customer.txt",
+      "kind": "aadhaar",
+      "category": "government_id",
+      "action": "move sensitive ID to encrypted vault"
+    },
+    {
+      "source_file": "..\\demo_data\\customer.txt",
+      "kind": "url",
+      "category": "behavioral",
+      "action": "review file and remove unnecessary personal data"
+    },
+    {
+      "source_file": "..\\demo_data\\customer.txt",
+      "kind": "token",
+      "category": "credentials",
+      "action": "remove or rotate credentials"
+    },
+    {
+      "source_file": "..\\demo_data\\employee.docx",
+      "kind": "email",
+      "category": "identity",
+      "action": "review file and remove unnecessary personal data"
+    },
+    {
+      "source_file": "..\\demo_data\\employee.docx",
+      "kind": "phone",
+      "category": "contact",
+      "action": "review and minimize exposure"
+    },
+    {
+      "source_file": "..\\demo_data\\employee.docx",
+      "kind": "phone",
+      "category": "contact",
+      "action": "review and minimize exposure"
+    },
+    {
+      "source_file": "..\\demo_data\\employee.docx",
+      "kind": "token",
+      "category": "credentials",
+      "action": "remove or rotate credentials"
+    },
+    {
+      "source_file": "..\\demo_data\\fake_profile (1).pdf",
+      "kind": "phone",
+      "category": "contact",
+      "action": "review and minimize exposure"
+    },
+    {
+      "source_file": "..\\demo_data\\fake_profile (1).pdf",
+      "kind": "aadhaar",
+      "category": "government_id",
+      "action": "move sensitive ID to encrypted vault"
+    },
+    {
+      "source_file": "..\\demo_data\\fake_profile.pdf",
+      "kind": "email",
+      "category": "identity",
+      "action": "review file and remove unnecessary personal data"
+    },
+    {
+      "source_file": "..\\demo_data\\fake_profile.pdf",
+      "kind": "phone",
+      "category": "contact",
+      "action": "review and minimize exposure"
+    },
+    {
+      "source_file": "..\\demo_data\\fake_profile.pdf",
+      "kind": "aadhaar",
+      "category": "government_id",
+      "action": "move sensitive ID to encrypted vault"
+    },
+    {
+      "source_file": "..\\demo_data\\squirrel.jpg",
+      "kind": "camera_make",
+      "category": "device",
+      "action": "review file and remove unnecessary personal data"
+    },
+    {
+      "source_file": "..\\demo_data\\squirrel.jpg",
+      "kind": "camera_model",
+      "category": "device",
+      "action": "review file and remove unnecessary personal data"
+    },
+    {
+      "source_file": "..\\demo_data\\squirrel.jpg",
+      "kind": "timestamp",
+      "category": "behavioral",
+      "action": "review file and remove unnecessary personal data"
+    },
+    {
+      "source_file": "..\\demo_data\\squirrel.jpg",
+      "kind": "software",
+      "category": "device",
+      "action": "review file and remove unnecessary personal data"
+    }
+  ]
+}

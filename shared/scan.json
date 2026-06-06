@@ -1,0 +1,281 @@
+{
+  "scan_path": "demo_data",
+  "emails": [
+    "sarah.wilson@company.com",
+    "john.doe@gmail.com",
+    "priyanka.kapor@example.com"
+  ],
+  "phones": [
+    "9876543210",
+    "9123456789",
+    "9988776655",
+    "1234567890"
+  ],
+  "aadhaars": [
+    "1234 5678 9012"
+  ],
+  "urls": [
+    "https://secure-bank.example"
+  ],
+  "tokens": [
+    "ghp_ABCD123456789XYZ987",
+    "sk_test_ABCDEF1234567890"
+  ],
+  "documents": [
+    "..\\demo_data\\customer.txt",
+    "..\\demo_data\\employee.docx",
+    "..\\demo_data\\fake_profile (1).pdf",
+    "..\\demo_data\\fake_profile.pdf",
+    "..\\demo_data\\~$ployee.docx"
+  ],
+  "photos": [
+    "..\\demo_data\\book.jpg",
+    "..\\demo_data\\city.jpg",
+    "..\\demo_data\\city2.jpg",
+    "..\\demo_data\\images.jpg",
+    "..\\demo_data\\sample1.jpeg",
+    "..\\demo_data\\squirrel.jpg"
+  ],
+  "gps": [],
+  "cookies": [
+    {
+      "browser": "Edge",
+      "error": "[Errno 13] Permission denied: 'C:\\\\Users\\\\Nandhini Thangaraj\\\\AppData\\\\Local\\\\Microsoft\\\\Edge\\\\User Data\\\\Default\\\\Network\\\\Cookies'"
+    },
+    {
+      "browser": "Chrome",
+      "error": "[Errno 13] Permission denied: 'C:\\\\Users\\\\Nandhini Thangaraj\\\\AppData\\\\Local\\\\Google\\\\Chrome\\\\User Data\\\\Default\\\\Network\\\\Cookies'"
+    }
+  ],
+  "files": [
+    {
+      "path": "..\\demo_data\\book.jpg",
+      "name": "book.jpg",
+      "extension": ".jpg",
+      "size": 132399,
+      "modified": 1780692350.2414877
+    },
+    {
+      "path": "..\\demo_data\\city.jpg",
+      "name": "city.jpg",
+      "extension": ".jpg",
+      "size": 173682,
+      "modified": 1780692082.7565882
+    },
+    {
+      "path": "..\\demo_data\\city2.jpg",
+      "name": "city2.jpg",
+      "extension": ".jpg",
+      "size": 187443,
+      "modified": 1780692366.1847405
+    },
+    {
+      "path": "..\\demo_data\\customer.txt",
+      "name": "customer.txt",
+      "extension": ".txt",
+      "size": 185,
+      "modified": 1780677593.4240148
+    },
+    {
+      "path": "..\\demo_data\\employee.docx",
+      "name": "employee.docx",
+      "extension": ".docx",
+      "size": 13680,
+      "modified": 1780680401.4384658
+    },
+    {
+      "path": "..\\demo_data\\fake_profile (1).pdf",
+      "name": "fake_profile (1).pdf",
+      "extension": ".pdf",
+      "size": 1926,
+      "modified": 1780673030.0728972
+    },
+    {
+      "path": "..\\demo_data\\fake_profile.pdf",
+      "name": "fake_profile.pdf",
+      "extension": ".pdf",
+      "size": 1594,
+      "modified": 1780691376.601133
+    },
+    {
+      "path": "..\\demo_data\\images.jpg",
+      "name": "images.jpg",
+      "extension": ".jpg",
+      "size": 4306,
+      "modified": 1780692002.7939217
+    },
+    {
+      "path": "..\\demo_data\\sample1.jpeg",
+      "name": "sample1.jpeg",
+      "extension": ".jpeg",
+      "size": 200074,
+      "modified": 1780701968.9935038
+    },
+    {
+      "path": "..\\demo_data\\squirrel.jpg",
+      "name": "squirrel.jpg",
+      "extension": ".jpg",
+      "size": 189345,
+      "modified": 1780692040.3941746
+    },
+    {
+      "path": "..\\demo_data\\~$ployee.docx",
+      "name": "~$ployee.docx",
+      "extension": ".docx",
+      "size": 162,
+      "modified": 1780680359.4152367
+    }
+  ],
+  "raw_findings": [
+    {
+      "source_file": "..\\demo_data\\book.jpg",
+      "kind": "camera_make",
+      "value": "SONY"
+    },
+    {
+      "source_file": "..\\demo_data\\book.jpg",
+      "kind": "camera_model",
+      "value": "ILCE-7M2"
+    },
+    {
+      "source_file": "..\\demo_data\\book.jpg",
+      "kind": "timestamp",
+      "value": "2020:11:22 09:41:39"
+    },
+    {
+      "source_file": "..\\demo_data\\book.jpg",
+      "kind": "software",
+      "value": "Adobe Photoshop Lightroom Classic 10.0 (Macintosh)"
+    },
+    {
+      "source_file": "..\\demo_data\\city.jpg",
+      "kind": "camera_make",
+      "value": "SONY"
+    },
+    {
+      "source_file": "..\\demo_data\\city.jpg",
+      "kind": "camera_model",
+      "value": "ILCE-7M2"
+    },
+    {
+      "source_file": "..\\demo_data\\city.jpg",
+      "kind": "timestamp",
+      "value": "2020:11:21 15:54:31"
+    },
+    {
+      "source_file": "..\\demo_data\\city.jpg",
+      "kind": "software",
+      "value": "Adobe Photoshop Lightroom Classic 10.0 (Macintosh)"
+    },
+    {
+      "source_file": "..\\demo_data\\city2.jpg",
+      "kind": "camera_make",
+      "value": "SONY"
+    },
+    {
+      "source_file": "..\\demo_data\\city2.jpg",
+      "kind": "camera_model",
+      "value": "ILCE-7M2"
+    },
+    {
+      "source_file": "..\\demo_data\\city2.jpg",
+      "kind": "timestamp",
+      "value": "2020:11:21 13:25:33"
+    },
+    {
+      "source_file": "..\\demo_data\\city2.jpg",
+      "kind": "software",
+      "value": "Adobe Photoshop Lightroom Classic 10.0 (Macintosh)"
+    },
+    {
+      "source_file": "..\\demo_data\\customer.txt",
+      "kind": "email",
+      "value": "john.doe@gmail.com"
+    },
+    {
+      "source_file": "..\\demo_data\\customer.txt",
+      "kind": "phone",
+      "value": "9876543210"
+    },
+    {
+      "source_file": "..\\demo_data\\customer.txt",
+      "kind": "aadhaar",
+      "value": "1234 5678 9012"
+    },
+    {
+      "source_file": "..\\demo_data\\customer.txt",
+      "kind": "url",
+      "value": "https://secure-bank.example"
+    },
+    {
+      "source_file": "..\\demo_data\\customer.txt",
+      "kind": "token",
+      "value": "sk_test_ABCDEF1234567890"
+    },
+    {
+      "source_file": "..\\demo_data\\employee.docx",
+      "kind": "email",
+      "value": "sarah.wilson@company.com"
+    },
+    {
+      "source_file": "..\\demo_data\\employee.docx",
+      "kind": "phone",
+      "value": "9988776655"
+    },
+    {
+      "source_file": "..\\demo_data\\employee.docx",
+      "kind": "phone",
+      "value": "9123456789"
+    },
+    {
+      "source_file": "..\\demo_data\\employee.docx",
+      "kind": "token",
+      "value": "ghp_ABCD123456789XYZ987"
+    },
+    {
+      "source_file": "..\\demo_data\\fake_profile (1).pdf",
+      "kind": "phone",
+      "value": "1234567890"
+    },
+    {
+      "source_file": "..\\demo_data\\fake_profile (1).pdf",
+      "kind": "aadhaar",
+      "value": "1234 5678 9012"
+    },
+    {
+      "source_file": "..\\demo_data\\fake_profile.pdf",
+      "kind": "email",
+      "value": "priyanka.kapor@example.com"
+    },
+    {
+      "source_file": "..\\demo_data\\fake_profile.pdf",
+      "kind": "phone",
+      "value": "9876543210"
+    },
+    {
+      "source_file": "..\\demo_data\\fake_profile.pdf",
+      "kind": "aadhaar",
+      "value": "1234 5678 9012"
+    },
+    {
+      "source_file": "..\\demo_data\\squirrel.jpg",
+      "kind": "camera_make",
+      "value": "FUJIFILM"
+    },
+    {
+      "source_file": "..\\demo_data\\squirrel.jpg",
+      "kind": "camera_model",
+      "value": "X100F"
+    },
+    {
+      "source_file": "..\\demo_data\\squirrel.jpg",
+      "kind": "timestamp",
+      "value": "2020:11:20 15:46:49"
+    },
+    {
+      "source_file": "..\\demo_data\\squirrel.jpg",
+      "kind": "software",
+      "value": "Adobe Photoshop Lightroom Classic 10.0 (Macintosh)"
+    }
+  ]
+}
