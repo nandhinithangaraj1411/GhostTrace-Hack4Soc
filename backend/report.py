@@ -1,4 +1,8 @@
+import argparse
 import json
+import os
+import time
+import uuid
 from pathlib import Path
 
 from scanner import scan_files
@@ -13,6 +17,7 @@ from patterns import (
     AADHAAR_REGEX,
     URL_REGEX,
     TOKEN_REGEX,
+    PAN_REGEX,
 )
 
 from classifier import classify_finding
@@ -37,6 +42,7 @@ def find_matches(text, source_file):
         ("phone", PHONE_REGEX),
         ("aadhaar", AADHAAR_REGEX),
         ("url", URL_REGEX),
+        ("pan", PAN_REGEX),
         ("token", TOKEN_REGEX),
     ]
 
@@ -53,15 +59,43 @@ def find_matches(text, source_file):
     return findings
 
 
-def build_reports():
-    files = scan_files()
+def risk_level_for(score):
+    if score >= 70:
+        return "High"
+    elif score >= 40:
+        return "Medium"
+    return "Low"
+
+
+def write_json_atomic(path, payload):
+    # Write to a temp file and swap it in, so a reader never sees a
+    # half-written scan.json / analysis.json.
+    tmp_path = path.with_name(f".{path.name}.{uuid.uuid4().hex}.tmp")
+    with tmp_path.open("w", encoding="utf-8") as fp:
+        json.dump(payload, fp, indent=2)
+    os.replace(tmp_path, path)
+
+
+def build_reports(files=None, include_cookies=True, scan_id=None,
+                  scan_source="demo_folder"):
+    # files: optional list of scan_files()-style dicts. Each may carry a
+    # "source" key (e.g. the original upload filename) that is recorded in
+    # the output instead of the on-disk path. When omitted, SCAN_ROOT is
+    # scanned exactly as before.
+    if files is None:
+        files = scan_files()
+
+    scan_id = scan_id or uuid.uuid4().hex
+    started_at = time.time()
 
     raw_findings = []
+    file_status = {}
 
     emails = []
     phones = []
     aadhaars = []
     urls = []
+    pans = []
     tokens = []
 
     documents = []
@@ -73,67 +107,75 @@ def build_reports():
 
     for f in files:
         ext = f["extension"]
+        # Name recorded in findings/output. For demo-folder scans this is
+        # the path, as before; for uploads it is the original filename.
+        src = f.get("source", f["path"])
+        status = {"status": "scanned", "error": None, "chars_extracted": None}
+        file_status[src] = status
 
         try:
             # TEXT FILES
             if ext in [".txt", ".csv", ".json"]:
-                documents.append(f["path"])
+                documents.append(src)
 
                 text = extract_text(f["path"])
+                status["chars_extracted"] = len(text)
                 print("\n==========")
-                print("FILE:", f["path"])
+                print("FILE:", src)
                 print(text)
                 print("==========\n")
 
                 findings = find_matches(
                     text,
-                    f["path"]
+                    src
                 )
 
                 raw_findings.extend(findings)
 
             # DOCUMENT FILES
             elif ext == ".pdf":
-                print("PDF FOUND:", f["path"])
-                documents.append(f["path"])
+                print("PDF FOUND:", src)
+                documents.append(src)
                 try:
                     #text = extract_text(f["path"])
                     text = extract_pdf_text(f["path"])
+                    status["chars_extracted"] = len(text)
                     print("PDF TEXT:")
                     print(text)
                     findings = find_matches(
                         text,
-                        f["path"] )
+                        src )
 
                     raw_findings.extend(findings)
 
                 except Exception as e:
                     print("PDF ERROR:", e)
+                    status.update(status="failed", error=f"PDF error: {e}")
             elif ext == ".docx":
-                documents.append(f["path"])
+                documents.append(src)
 
                 try:
-                    print("DOCX FOUND:", f["path"])
-                    print("PATH =", f["path"])
+                    print("DOCX FOUND:", src)
                     text = extract_docx_text(f["path"])
+                    status["chars_extracted"] = len(text)
 
                     print("DOCX TEXT:")
                     print(text)
 
                     findings = find_matches(
                         text,
-                        f["path"]
+                        src
                     )
 
                     raw_findings.extend(findings)
 
                 except Exception as e:
                     print("DOCX ERROR:", e)
-            # IMAGE FILES
+                    status.update(status="failed", error=f"DOCX error: {e}")
             # IMAGE FILES
             elif ext in [".jpg", ".jpeg", ".png"]:
 
-                photos.append(f["path"])
+                photos.append(src)
 
                 try:
                     metadata = extract_image_metadata(
@@ -147,73 +189,58 @@ def build_reports():
                     metadata_text = " ".join(
                         [f"{k}: {v}" for k, v in metadata.items()]
                     )
+                    status["chars_extracted"] = len(metadata_text)
 
                     # Run regex scanning on metadata
                     findings = find_matches(
                         metadata_text,
-                        f["path"]
+                        src
                     )
 
                     raw_findings.extend(findings)
 
                     # EXIF-specific findings
+                    exif_kinds = [
+                        ("Artist", "name"),
+                        ("DateTimeOriginal", "timestamp"),
+                        ("Copyright", "copyright"),
+                        ("Make", "camera_make"),
+                        ("Model", "camera_model"),
+                        ("DateTime", "timestamp"),
+                        ("Software", "software"),
+                    ]
 
-                    if "Artist" in metadata:
-                        raw_findings.append({
-                            "source_file": f["path"],
-                            "kind": "name",
-                            "value": metadata["Artist"]
-                        })
-
-                    if "DateTimeOriginal" in metadata:
-                        raw_findings.append({
-                            "source_file": f["path"],
-                            "kind": "timestamp",
-                            "value": metadata["DateTimeOriginal"]
-                        })
-
-                    if "Copyright" in metadata:
-                        raw_findings.append({
-                            "source_file": f["path"],
-                            "kind": "copyright",
-                            "value": metadata["Copyright"]
-                        })
-                    if "Make" in metadata:
-                        raw_findings.append({
-                            "source_file": f["path"],
-                            "kind": "camera_make",
-                            "value": metadata["Make"]
-                        })
-
-                    if "Model" in metadata:
-                        raw_findings.append({
-                            "source_file": f["path"],
-                            "kind": "camera_model",
-                            "value": metadata["Model"]
-                        })
-
-                    if "DateTime" in metadata:
-                        raw_findings.append({
-                            "source_file": f["path"],
-                            "kind": "timestamp",
-                            "value": metadata["DateTime"]
-                        })
-
-                    if "Software" in metadata:
-                        raw_findings.append({
-                            "source_file": f["path"],
-                            "kind": "software",
-                            "value": metadata["Software"]
-                        })
+                    for tag, kind in exif_kinds:
+                        if tag in metadata:
+                            raw_findings.append({
+                                "source_file": src,
+                                "kind": kind,
+                                "value": metadata[tag]
+                            })
 
                 except Exception as e:
                     print(
-                        f"Error processing image {f['path']}: {e}"
+                        f"Error processing image {src}: {e}"
                     )
+                    status.update(status="failed", error=f"Image error: {e}")
+            else:
+                # Listed by the scanner (e.g. .sqlite/.db) but no extractor
+                # is wired up - report it instead of implying "0 findings".
+                status.update(
+                    status="unsupported",
+                    error=f"No extractor for {ext} files",
+                )
         except Exception as e:
             print(
-                f"Error processing {f['path']}: {e}"
+                f"Error processing {src}: {e}"
             )
+            status.update(status="failed", error=str(e))
+
+        # Extractor messages can embed the on-disk (temp) path.
+        # (Some, like PIL, embed repr(path) with escaped backslashes.)
+        if status["error"] and src != f["path"]:
+            for variant in (repr(f["path"])[1:-1], f["path"]):
+                status["error"] = status["error"].replace(variant, src)
 
     # --------------------------------
     # Categorise Findings
@@ -234,6 +261,9 @@ def build_reports():
         elif kind == "url":
             urls.append(finding["value"])
 
+        elif kind == "pan":
+            pans.append(finding["value"])
+
         elif kind == "token":
             tokens.append(finding["value"])
 
@@ -241,23 +271,44 @@ def build_reports():
     # Cookie Extraction
     # --------------------------------
 
-    try:
-        cookies = extract_browser_cookies()
-    except Exception as e:
-        print("Cookie extraction failed:", e)
-        cookies = []
+    # Browser cookies come from this machine, not from the scanned files,
+    # so upload scans turn this off to keep results about the uploads only.
+    cookies = []
+    if include_cookies:
+        try:
+            cookies = extract_browser_cookies()
+        except Exception as e:
+            print("Cookie extraction failed:", e)
+            cookies = []
+
+    # Same shape as scan_files() output, but with the recorded source name
+    # as "path" so temp upload paths never land in the JSON.
+    output_files = []
+    for f in files:
+        entry = {k: v for k, v in f.items() if k != "source"}
+        entry["path"] = f.get("source", f["path"])
+        output_files.append(entry)
+
+    scan_meta = {
+        "scan_id": scan_id,
+        "source": scan_source,
+        "started_at": started_at,
+        "include_cookies": include_cookies,
+    }
 
     # --------------------------------
     # Build scan.json
     # --------------------------------
 
     scan_report = {
-        "scan_path": "demo_data",
+        "scan_meta": scan_meta,
+        "scan_path": "demo_data" if scan_source == "demo_folder" else "uploaded_documents",
 
         "emails": list(set(emails)),
         "phones": list(set(phones)),
         "aadhaars": list(set(aadhaars)),
         "urls": list(set(urls)),
+        "pans": list(set(pans)),
         "tokens": list(set(tokens)),
 
         "documents": documents,
@@ -267,7 +318,7 @@ def build_reports():
 
         "cookies": cookies,
 
-        "files": files,
+        "files": output_files,
         "raw_findings": raw_findings,
     }
 
@@ -276,15 +327,7 @@ def build_reports():
         exist_ok=True
     )
 
-    with SCAN_JSON.open(
-        "w",
-        encoding="utf-8"
-    ) as fp:
-        json.dump(
-            scan_report,
-            fp,
-            indent=2
-        )
+    write_json_atomic(SCAN_JSON, scan_report)
 
     # --------------------------------
     # Analysis Layer
@@ -309,7 +352,7 @@ def build_reports():
     )
 
     timeline = build_timeline(
-        files,
+        output_files,
         classified_findings,
     )
 
@@ -330,12 +373,55 @@ def build_reports():
 
     risk_score = min(risk_score, 100)
 
-    if risk_score >= 70:
-            risk_level = "High"
-    elif risk_score >= 40:
-            risk_level = "Medium"
-    else:
-            risk_level = "Low"
+    risk_level = risk_level_for(risk_score)
+
+    # --------------------------------
+    # Per-document results
+    # --------------------------------
+    # Document score uses the same rule as privacy_score
+    # (calculate_privacy_score over that file's classified findings).
+
+    document_results = []
+
+    for f in output_files:
+        src = f["path"]
+        status = file_status.get(src, {})
+        doc_findings = [
+            item for item in classified_findings
+            if item["source_file"] == src
+        ]
+        categories = {}
+        for item in doc_findings:
+            categories[item["category"]] = categories.get(item["category"], 0) + 1
+
+        ok = status.get("status") == "scanned"
+        doc_score = calculate_privacy_score(doc_findings) if ok else None
+
+        warning = None
+        if ok and status.get("chars_extracted") == 0:
+            if f["extension"] in [".jpg", ".jpeg", ".png"]:
+                warning = "No EXIF metadata found"
+            else:
+                warning = "No text could be extracted"
+
+        document_results.append({
+            "source_file": src,
+            "name": f["name"],
+            "extension": f["extension"],
+            "size": f.get("size"),
+            "status": status.get("status", "failed"),
+            "error": status.get("error"),
+            "warning": warning,
+            "chars_extracted": status.get("chars_extracted"),
+            "total_findings": len(doc_findings),
+            "privacy_score": doc_score,
+            "risk_level": risk_level_for(doc_score) if ok else None,
+            "categories": categories,
+        })
+
+    failed_files = sum(
+        1 for d in document_results if d["status"] != "scanned"
+    )
 
 
     # --------------------------------
@@ -410,7 +496,11 @@ def build_reports():
             "action": "Clear unnecessary cookies",
             "reason": "Reduces tracking and session abuse"
         })
+    scan_meta["finished_at"] = time.time()
+
     analysis_report = {
+
+        "scan_meta": scan_meta,
 
         "privacy_score": privacy_score,
 
@@ -422,7 +512,11 @@ def build_reports():
             "total_findings": len(
                 classified_findings
             ),
+            "scanned_files": len(files) - failed_files,
+            "failed_files": failed_files,
         },
+
+        "document_results": document_results,
 
         "findings": classified_findings,
 
@@ -437,18 +531,12 @@ def build_reports():
         "remediations": remediations
     }
 
-    with ANALYSIS_JSON.open(
-        "w",
-        encoding="utf-8"
-    ) as fp:
-        json.dump(
-            analysis_report,
-            fp,
-            indent=2
-        )
+    write_json_atomic(ANALYSIS_JSON, analysis_report)
 
     print("\n=== GhostTrace Scan Complete ===")
+    print(f"Scan ID: {scan_id}")
     print(f"Files found: {len(files)}")
+    print(f"Files failed: {failed_files}")
     print(
         f"Findings found: {len(raw_findings)}"
     )
@@ -468,5 +556,47 @@ def build_reports():
     }
 
 
+def files_from_manifest(manifest):
+    # Manifest entries: {"path": <file on disk>, "name": <original filename>}
+    files = []
+    for entry in manifest.get("files", []):
+        path = Path(entry["path"])
+        stat = path.stat()
+        files.append({
+            "path": str(path),
+            "name": entry["name"],
+            "extension": path.suffix.lower(),
+            "size": stat.st_size,
+            "modified": stat.st_mtime,
+            "source": entry["name"],
+        })
+    return files
+
+
 if __name__ == "__main__":
-    build_reports()
+    import sys
+
+    # Document text is echoed to stdout; don't let a cp1252 console/pipe
+    # turn a non-ASCII character into a silently skipped file.
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+
+    parser = argparse.ArgumentParser(description="GhostTrace scan pipeline")
+    parser.add_argument(
+        "--manifest",
+        help="JSON file listing specific files to scan (used by the upload UI). "
+             "Without it, the demo_data folder is scanned.",
+    )
+    args = parser.parse_args()
+
+    if args.manifest:
+        manifest = json.loads(Path(args.manifest).read_text(encoding="utf-8"))
+        build_reports(
+            # No "files" key -> scan SCAN_ROOT as usual.
+            files=files_from_manifest(manifest) if "files" in manifest else None,
+            include_cookies=manifest.get("include_cookies", False),
+            scan_id=manifest.get("scan_id"),
+            scan_source=manifest.get("source", "upload"),
+        )
+    else:
+        build_reports()

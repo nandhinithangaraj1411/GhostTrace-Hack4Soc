@@ -1,358 +1,229 @@
 {
-  "scan_path": "demo_data",
-<<<<<<< HEAD
+  "scan_meta": {
+    "scan_id": "e4d0bb49ce334a8794cd70e892b757fe",
+    "source": "upload",
+    "started_at": 1792782258.626186,
+    "include_cookies": false
+  },
+  "scan_path": "uploaded_documents",
   "emails": [
-    "sarah.wilson@company.com",
-    "john.doe@gmail.com",
-    "priyanka.kapor@example.com"
+    "avaswani@google.com",
+    "lukaszkaiser@google.com",
+    "nikip@google.com",
+    "llion@google.com",
+    "usz@google.com",
+    "illia.polosukhin@gmail.com",
+    "noam@google.com",
+    "aidan@cs.toronto.edu"
   ],
-  "phones": [
-    "9876543210",
-    "9123456789",
-    "9988776655",
-    "1234567890"
-  ],
-  "aadhaars": [
-    "1234 5678 9012"
-  ],
+  "phones": [],
+  "aadhaars": [],
   "urls": [
-    "https://secure-bank.example"
+    "https://github.com/"
   ],
+  "pans": [],
   "tokens": [
-    "ghp_ABCD123456789XYZ987",
-    "sk_test_ABCDEF1234567890"
+    "task-independent",
+    "English-to-German",
+    "mixture-of-experts",
+    "sequence-to-sequence",
+    "state-of-the-art",
+    "dmodel-dimensional",
+    "attention-weighted",
+    "English-to-French",
+    "Acknowledgements",
+    "single-precision"
   ],
   "documents": [
-    "..\\demo_data\\customer.txt",
-    "..\\demo_data\\employee.docx",
-    "..\\demo_data\\fake_profile (1).pdf",
-    "..\\demo_data\\fake_profile.pdf",
-    "..\\demo_data\\~$ployee.docx"
+    "attention_is_all_you_need.pdf"
   ],
-  "photos": [
-    "..\\demo_data\\book.jpg",
-    "..\\demo_data\\city.jpg",
-    "..\\demo_data\\city2.jpg",
-    "..\\demo_data\\images.jpg",
-    "..\\demo_data\\sample1.jpeg",
-    "..\\demo_data\\squirrel.jpg"
-  ],
+  "photos": [],
   "gps": [],
-  "cookies": [
-    {
-      "browser": "Edge",
-      "error": "[Errno 13] Permission denied: 'C:\\\\Users\\\\Nandhini Thangaraj\\\\AppData\\\\Local\\\\Microsoft\\\\Edge\\\\User Data\\\\Default\\\\Network\\\\Cookies'"
-    },
-    {
-      "browser": "Chrome",
-      "error": "[Errno 13] Permission denied: 'C:\\\\Users\\\\Nandhini Thangaraj\\\\AppData\\\\Local\\\\Google\\\\Chrome\\\\User Data\\\\Default\\\\Network\\\\Cookies'"
-    }
-  ],
+  "cookies": [],
   "files": [
     {
-      "path": "..\\demo_data\\book.jpg",
-      "name": "book.jpg",
-      "extension": ".jpg",
-      "size": 132399,
-      "modified": 1780692350.2414877
-    },
-    {
-      "path": "..\\demo_data\\city.jpg",
-      "name": "city.jpg",
-      "extension": ".jpg",
-      "size": 173682,
-      "modified": 1780692082.7565882
-    },
-    {
-      "path": "..\\demo_data\\city2.jpg",
-      "name": "city2.jpg",
-      "extension": ".jpg",
-      "size": 187443,
-      "modified": 1780692366.1847405
-    },
-    {
-      "path": "..\\demo_data\\customer.txt",
-      "name": "customer.txt",
-      "extension": ".txt",
-      "size": 185,
-      "modified": 1780677593.4240148
-    },
-    {
-      "path": "..\\demo_data\\employee.docx",
-      "name": "employee.docx",
-      "extension": ".docx",
-      "size": 13680,
-      "modified": 1780680401.4384658
-    },
-    {
-      "path": "..\\demo_data\\fake_profile (1).pdf",
-      "name": "fake_profile (1).pdf",
+      "path": "attention_is_all_you_need.pdf",
+      "name": "attention_is_all_you_need.pdf",
       "extension": ".pdf",
-      "size": 1926,
-      "modified": 1780673030.0728972
-    },
-    {
-      "path": "..\\demo_data\\fake_profile.pdf",
-      "name": "fake_profile.pdf",
-      "extension": ".pdf",
-      "size": 1594,
-      "modified": 1780691376.601133
-    },
-    {
-      "path": "..\\demo_data\\images.jpg",
-      "name": "images.jpg",
-      "extension": ".jpg",
-      "size": 4306,
-      "modified": 1780692002.7939217
-    },
-    {
-      "path": "..\\demo_data\\sample1.jpeg",
-      "name": "sample1.jpeg",
-      "extension": ".jpeg",
-      "size": 200074,
-      "modified": 1780701968.9935038
-    },
-    {
-      "path": "..\\demo_data\\squirrel.jpg",
-      "name": "squirrel.jpg",
-      "extension": ".jpg",
-      "size": 189345,
-      "modified": 1780692040.3941746
-    },
-    {
-      "path": "..\\demo_data\\~$ployee.docx",
-      "name": "~$ployee.docx",
-      "extension": ".docx",
-      "size": 162,
-      "modified": 1780680359.4152367
+      "size": 2215244,
+      "modified": 1792782258.0836036
     }
   ],
   "raw_findings": [
     {
-      "source_file": "..\\demo_data\\book.jpg",
-      "kind": "camera_make",
-      "value": "SONY"
-    },
-    {
-      "source_file": "..\\demo_data\\book.jpg",
-      "kind": "camera_model",
-      "value": "ILCE-7M2"
-    },
-    {
-      "source_file": "..\\demo_data\\book.jpg",
-      "kind": "timestamp",
-      "value": "2020:11:22 09:41:39"
-    },
-    {
-      "source_file": "..\\demo_data\\book.jpg",
-      "kind": "software",
-      "value": "Adobe Photoshop Lightroom Classic 10.0 (Macintosh)"
-    },
-    {
-      "source_file": "..\\demo_data\\city.jpg",
-      "kind": "camera_make",
-      "value": "SONY"
-    },
-    {
-      "source_file": "..\\demo_data\\city.jpg",
-      "kind": "camera_model",
-      "value": "ILCE-7M2"
-    },
-    {
-      "source_file": "..\\demo_data\\city.jpg",
-      "kind": "timestamp",
-      "value": "2020:11:21 15:54:31"
-    },
-    {
-      "source_file": "..\\demo_data\\city.jpg",
-      "kind": "software",
-      "value": "Adobe Photoshop Lightroom Classic 10.0 (Macintosh)"
-    },
-    {
-      "source_file": "..\\demo_data\\city2.jpg",
-      "kind": "camera_make",
-      "value": "SONY"
-    },
-    {
-      "source_file": "..\\demo_data\\city2.jpg",
-      "kind": "camera_model",
-      "value": "ILCE-7M2"
-    },
-    {
-      "source_file": "..\\demo_data\\city2.jpg",
-      "kind": "timestamp",
-      "value": "2020:11:21 13:25:33"
-    },
-    {
-      "source_file": "..\\demo_data\\city2.jpg",
-      "kind": "software",
-      "value": "Adobe Photoshop Lightroom Classic 10.0 (Macintosh)"
-    },
-=======
-
-  "emails": [
-    "john.doe@gmail.com"
-  ],
-
-  "phones": [
-    "6060520161",
-    "6060520202",
-    "+91 9876543210"
-  ],
-
-  "aadhaars": [
-    "1234 5678 9012"
-  ],
-
-  "urls": [
-    "https://secure-bank.example"
-  ],
-
-  "documents": [
-    "..\\demo_data\\customer.txt",
-    "..\\demo_data\\fake_profile (1).pdf",
-    "..\\demo_data\\fake_profile.pdf"
-  ],
-
-  "photos": [
-    "..\\demo_data\\screenshot.jpeg"
-  ],
-
-  "gps": [],
-
-  "cookies": [
-    {
-      "browser": "Edge",
-      "error": "[Errno 13] Permission denied"
-    },
-    {
-      "browser": "Chrome",
-      "error": "[Errno 13] Permission denied"
-    }
-  ],
-
-  "raw_findings": [
-
->>>>>>> 155a4fb3eddbbb44466d3dd42b55385904ae957a
-    {
-      "source_file": "..\\demo_data\\customer.txt",
+      "source_file": "attention_is_all_you_need.pdf",
       "kind": "email",
-      "value": "john.doe@gmail.com"
+      "value": "avaswani@google.com"
     },
-<<<<<<< HEAD
     {
-      "source_file": "..\\demo_data\\customer.txt",
-      "kind": "phone",
-      "value": "9876543210"
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "email",
+      "value": "noam@google.com"
     },
-=======
-
     {
-      "source_file": "..\\demo_data\\customer.txt",
-      "kind": "phone",
-      "value": "+91 9876543210"
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "email",
+      "value": "nikip@google.com"
     },
-
->>>>>>> 155a4fb3eddbbb44466d3dd42b55385904ae957a
     {
-      "source_file": "..\\demo_data\\customer.txt",
-      "kind": "aadhaar",
-      "value": "1234 5678 9012"
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "email",
+      "value": "usz@google.com"
     },
-<<<<<<< HEAD
-=======
-
->>>>>>> 155a4fb3eddbbb44466d3dd42b55385904ae957a
     {
-      "source_file": "..\\demo_data\\customer.txt",
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "email",
+      "value": "llion@google.com"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "email",
+      "value": "aidan@cs.toronto.edu"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "email",
+      "value": "lukaszkaiser@google.com"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "email",
+      "value": "illia.polosukhin@gmail.com"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
       "kind": "url",
-      "value": "https://secure-bank.example"
+      "value": "https://github.com/"
     },
-<<<<<<< HEAD
     {
-      "source_file": "..\\demo_data\\customer.txt",
+      "source_file": "attention_is_all_you_need.pdf",
       "kind": "token",
-      "value": "sk_test_ABCDEF1234567890"
+      "value": "English-to-French"
     },
     {
-      "source_file": "..\\demo_data\\employee.docx",
-      "kind": "email",
-      "value": "sarah.wilson@company.com"
-    },
-    {
-      "source_file": "..\\demo_data\\employee.docx",
-      "kind": "phone",
-      "value": "9988776655"
-    },
-    {
-      "source_file": "..\\demo_data\\employee.docx",
-      "kind": "phone",
-      "value": "9123456789"
-    },
-    {
-      "source_file": "..\\demo_data\\employee.docx",
+      "source_file": "attention_is_all_you_need.pdf",
       "kind": "token",
-      "value": "ghp_ABCD123456789XYZ987"
+      "value": "state-of-the-art"
     },
     {
-      "source_file": "..\\demo_data\\fake_profile (1).pdf",
-      "kind": "phone",
-      "value": "1234567890"
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "attention-weighted"
     },
     {
-      "source_file": "..\\demo_data\\fake_profile (1).pdf",
-      "kind": "aadhaar",
-      "value": "1234 5678 9012"
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "task-independent"
     },
     {
-      "source_file": "..\\demo_data\\fake_profile.pdf",
-      "kind": "email",
-      "value": "priyanka.kapor@example.com"
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "dmodel-dimensional"
     },
     {
-      "source_file": "..\\demo_data\\fake_profile.pdf",
-      "kind": "phone",
-      "value": "9876543210"
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "sequence-to-sequence"
     },
     {
-      "source_file": "..\\demo_data\\fake_profile.pdf",
-      "kind": "aadhaar",
-      "value": "1234 5678 9012"
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "state-of-the-art"
     },
     {
-      "source_file": "..\\demo_data\\squirrel.jpg",
-      "kind": "camera_make",
-      "value": "FUJIFILM"
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "state-of-the-art"
     },
     {
-      "source_file": "..\\demo_data\\squirrel.jpg",
-      "kind": "camera_model",
-      "value": "X100F"
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "English-to-German"
     },
     {
-      "source_file": "..\\demo_data\\squirrel.jpg",
-      "kind": "timestamp",
-      "value": "2020:11:20 15:46:49"
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "English-to-French"
     },
     {
-      "source_file": "..\\demo_data\\squirrel.jpg",
-      "kind": "software",
-      "value": "Adobe Photoshop Lightroom Classic 10.0 (Macintosh)"
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "English-to-German"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "state-of-the-art"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "English-to-French"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "state-of-the-art"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "English-to-French"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "single-precision"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "English-to-German"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "English-to-German"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "sequence-to-sequence"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "state-of-the-art"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "English-to-German"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "sequence-to-sequence"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "English-to-German"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "English-to-French"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "Acknowledgements"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "mixture-of-experts"
     }
-=======
-
-    {
-      "source_file": "..\\demo_data\\fake_profile (1).pdf",
-      "kind": "phone",
-      "value": "6060520202"
-    },
-
-    {
-      "source_file": "..\\demo_data\\fake_profile.pdf",
-      "kind": "phone",
-      "value": "6060520161"
-    }
-
->>>>>>> 155a4fb3eddbbb44466d3dd42b55385904ae957a
   ]
 }

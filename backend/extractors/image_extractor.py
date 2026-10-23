@@ -14,5 +14,8 @@ def extract_image_metadata(image_path):
 
     except Exception as e:
         print("EXIF ERROR:", e)
+        # Re-raise so an unreadable image is reported as failed instead of
+        # looking like a valid image that simply has no metadata.
+        raise
 
     return metadata

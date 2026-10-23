@@ -1,4 +1,6 @@
 import json
+import subprocess
+import sys
 from pathlib import Path
 
 import streamlit as st
@@ -221,7 +223,9 @@ st.markdown("""
 <span class="team-badge">Cooper Trio</span>
 """, unsafe_allow_html=True)
 
-DATA_PATH = Path("analysis.json")
+ROOT_DIR = Path(__file__).resolve().parent
+DATA_PATH = ROOT_DIR / "shared" / "analysis.json"
+REPORT_SCRIPT = ROOT_DIR / "backend" / "report.py"
 
 
 def load_data():
@@ -318,11 +322,24 @@ with st.sidebar:
 
 
 if scan_clicked:
-    st.session_state.scanned = True
-    st.session_state.page = "Dashboard"
-    st.session_state.selected_finding = None
-    st.session_state.selected_finding_idx = None
+    with st.spinner("Scanning demo_data and running analysis..."):
+        result = subprocess.run(
+            [sys.executable, str(REPORT_SCRIPT)],
+            capture_output=True,
+            text=True,
+        )
+    if result.returncode != 0:
+        st.session_state.scan_error = result.stderr or result.stdout or "Scan failed."
+    else:
+        st.session_state.scan_error = None
+        st.session_state.scanned = True
+        st.session_state.page = "Dashboard"
+        st.session_state.selected_finding = None
+        st.session_state.selected_finding_idx = None
     st.rerun()
+
+if st.session_state.get("scan_error"):
+    st.error(f"Scan failed:\n\n{st.session_state.scan_error}")
 
 
 data = load_data() if st.session_state.scanned else {}

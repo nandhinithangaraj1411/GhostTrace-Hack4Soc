@@ -1,0 +1,40 @@
+# GhostTrace UI theme. Picked up when Streamlit is launched from the
+# project root (python -m streamlit run frontend\app.py).
+
+[theme]
+base = "dark"
+primaryColor = "#38BDF8"
+backgroundColor = "#080D18"
+secondaryBackgroundColor = "#111827"
+textColor = "#E5E7EB"
+borderColor = "#1F2937"
+linkColor = "#38BDF8"
+font = "'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif"
+codeFont = "'JetBrains Mono', 'Cascadia Mono', Consolas, monospace"
+baseRadius = "10px"
+showSidebarBorder = true
+dataframeHeaderBackgroundColor = "#0F172A"
+dataframeBorderColor = "#1F2937"
+
+# Palette used by native badges, alerts and coloured markdown.
+redColor = "#F87171"
+orangeColor = "#FB923C"
+yellowColor = "#FBBF24"
+greenColor = "#34D399"
+blueColor = "#38BDF8"
+violetColor = "#8B5CF6"
+grayColor = "#94A3B8"
+
+[theme.sidebar]
+backgroundColor = "#0B1222"
+secondaryBackgroundColor = "#111827"
+
+[browser]
+# Streamlit otherwise sends anonymous usage telemetry to an external
+# service; GhostTrace is a local-only tool.
+gatherUsageStats = false
+
+[server]
+# Uploaded documents stay on this machine: don't listen on the LAN.
+# Remove this line if you deliberately want to serve other devices.
+address = "localhost"

@@ -1,230 +1,290 @@
 {
-<<<<<<< HEAD
-  "privacy_score": 100,
-  "risk_score": 61,
-  "risk_level": "Medium",
-  "summary": {
-    "total_files": 11,
-    "total_findings": 30
+  "scan_meta": {
+    "scan_id": "e4d0bb49ce334a8794cd70e892b757fe",
+    "source": "upload",
+    "started_at": 1792782258.626186,
+    "include_cookies": false,
+    "finished_at": 1792782260.456757
   },
+  "privacy_score": 100,
+  "risk_score": 100,
+  "risk_level": "High",
+  "summary": {
+    "total_files": 1,
+    "total_findings": 35,
+    "scanned_files": 1,
+    "failed_files": 0
+  },
+  "document_results": [
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "name": "attention_is_all_you_need.pdf",
+      "extension": ".pdf",
+      "size": 2215244,
+      "status": "scanned",
+      "error": null,
+      "warning": null,
+      "chars_extracted": 39612,
+      "total_findings": 35,
+      "privacy_score": 100,
+      "risk_level": "High",
+      "categories": {
+        "identity": 8,
+        "behavioral": 1,
+        "credentials": 26
+      }
+    }
+  ],
   "findings": [
     {
-      "source_file": "..\\demo_data\\book.jpg",
-      "kind": "camera_make",
-      "value": "SONY",
-      "category": "device",
-      "risk": 7
-    },
-    {
-      "source_file": "..\\demo_data\\book.jpg",
-      "kind": "camera_model",
-      "value": "ILCE-7M2",
-      "category": "device",
-      "risk": 7
-    },
-    {
-      "source_file": "..\\demo_data\\book.jpg",
-      "kind": "timestamp",
-      "value": "2020:11:22 09:41:39",
-      "category": "behavioral",
-      "risk": 5
-    },
-    {
-      "source_file": "..\\demo_data\\book.jpg",
-      "kind": "software",
-      "value": "Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
-      "category": "device",
-      "risk": 4
-    },
-    {
-      "source_file": "..\\demo_data\\city.jpg",
-      "kind": "camera_make",
-      "value": "SONY",
-      "category": "device",
-      "risk": 7
-    },
-    {
-      "source_file": "..\\demo_data\\city.jpg",
-      "kind": "camera_model",
-      "value": "ILCE-7M2",
-      "category": "device",
-      "risk": 7
-    },
-    {
-      "source_file": "..\\demo_data\\city.jpg",
-      "kind": "timestamp",
-      "value": "2020:11:21 15:54:31",
-      "category": "behavioral",
-      "risk": 5
-    },
-    {
-      "source_file": "..\\demo_data\\city.jpg",
-      "kind": "software",
-      "value": "Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
-      "category": "device",
-      "risk": 4
-    },
-    {
-      "source_file": "..\\demo_data\\city2.jpg",
-      "kind": "camera_make",
-      "value": "SONY",
-      "category": "device",
-      "risk": 7
-    },
-    {
-      "source_file": "..\\demo_data\\city2.jpg",
-      "kind": "camera_model",
-      "value": "ILCE-7M2",
-      "category": "device",
-      "risk": 7
-    },
-    {
-      "source_file": "..\\demo_data\\city2.jpg",
-      "kind": "timestamp",
-      "value": "2020:11:21 13:25:33",
-      "category": "behavioral",
-      "risk": 5
-    },
-    {
-      "source_file": "..\\demo_data\\city2.jpg",
-      "kind": "software",
-      "value": "Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
-      "category": "device",
-      "risk": 4
-    },
-    {
-      "source_file": "..\\demo_data\\customer.txt",
+      "source_file": "attention_is_all_you_need.pdf",
       "kind": "email",
-      "value": "john.doe@gmail.com",
+      "value": "avaswani@google.com",
       "category": "identity",
       "risk": 8
     },
     {
-      "source_file": "..\\demo_data\\customer.txt",
-      "kind": "phone",
-      "value": "9876543210",
-      "category": "contact",
-      "risk": 6
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "email",
+      "value": "noam@google.com",
+      "category": "identity",
+      "risk": 8
     },
     {
-      "source_file": "..\\demo_data\\customer.txt",
-      "kind": "aadhaar",
-      "value": "1234 5678 9012",
-      "category": "government_id",
-      "risk": 20
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "email",
+      "value": "nikip@google.com",
+      "category": "identity",
+      "risk": 8
     },
     {
-      "source_file": "..\\demo_data\\customer.txt",
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "email",
+      "value": "usz@google.com",
+      "category": "identity",
+      "risk": 8
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "email",
+      "value": "llion@google.com",
+      "category": "identity",
+      "risk": 8
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "email",
+      "value": "aidan@cs.toronto.edu",
+      "category": "identity",
+      "risk": 8
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "email",
+      "value": "lukaszkaiser@google.com",
+      "category": "identity",
+      "risk": 8
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "email",
+      "value": "illia.polosukhin@gmail.com",
+      "category": "identity",
+      "risk": 8
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
       "kind": "url",
-      "value": "https://secure-bank.example",
+      "value": "https://github.com/",
       "category": "behavioral",
       "risk": 5
     },
     {
-      "source_file": "..\\demo_data\\customer.txt",
+      "source_file": "attention_is_all_you_need.pdf",
       "kind": "token",
-      "value": "sk_test_ABCDEF1234567890",
+      "value": "English-to-French",
       "category": "credentials",
       "risk": 22
     },
     {
-      "source_file": "..\\demo_data\\employee.docx",
-      "kind": "email",
-      "value": "sarah.wilson@company.com",
-      "category": "identity",
-      "risk": 8
-    },
-    {
-      "source_file": "..\\demo_data\\employee.docx",
-      "kind": "phone",
-      "value": "9988776655",
-      "category": "contact",
-      "risk": 6
-    },
-    {
-      "source_file": "..\\demo_data\\employee.docx",
-      "kind": "phone",
-      "value": "9123456789",
-      "category": "contact",
-      "risk": 6
-    },
-    {
-      "source_file": "..\\demo_data\\employee.docx",
+      "source_file": "attention_is_all_you_need.pdf",
       "kind": "token",
-      "value": "ghp_ABCD123456789XYZ987",
+      "value": "state-of-the-art",
       "category": "credentials",
       "risk": 22
     },
     {
-      "source_file": "..\\demo_data\\fake_profile (1).pdf",
-      "kind": "phone",
-      "value": "1234567890",
-      "category": "contact",
-      "risk": 6
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "attention-weighted",
+      "category": "credentials",
+      "risk": 22
     },
     {
-      "source_file": "..\\demo_data\\fake_profile (1).pdf",
-      "kind": "aadhaar",
-      "value": "1234 5678 9012",
-      "category": "government_id",
-      "risk": 20
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "task-independent",
+      "category": "credentials",
+      "risk": 22
     },
     {
-      "source_file": "..\\demo_data\\fake_profile.pdf",
-      "kind": "email",
-      "value": "priyanka.kapor@example.com",
-      "category": "identity",
-      "risk": 8
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "dmodel-dimensional",
+      "category": "credentials",
+      "risk": 22
     },
     {
-      "source_file": "..\\demo_data\\fake_profile.pdf",
-      "kind": "phone",
-      "value": "9876543210",
-      "category": "contact",
-      "risk": 6
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "sequence-to-sequence",
+      "category": "credentials",
+      "risk": 22
     },
     {
-      "source_file": "..\\demo_data\\fake_profile.pdf",
-      "kind": "aadhaar",
-      "value": "1234 5678 9012",
-      "category": "government_id",
-      "risk": 20
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "state-of-the-art",
+      "category": "credentials",
+      "risk": 22
     },
     {
-      "source_file": "..\\demo_data\\squirrel.jpg",
-      "kind": "camera_make",
-      "value": "FUJIFILM",
-      "category": "device",
-      "risk": 7
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "state-of-the-art",
+      "category": "credentials",
+      "risk": 22
     },
     {
-      "source_file": "..\\demo_data\\squirrel.jpg",
-      "kind": "camera_model",
-      "value": "X100F",
-      "category": "device",
-      "risk": 7
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "English-to-German",
+      "category": "credentials",
+      "risk": 22
     },
     {
-      "source_file": "..\\demo_data\\squirrel.jpg",
-      "kind": "timestamp",
-      "value": "2020:11:20 15:46:49",
-      "category": "behavioral",
-      "risk": 5
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "English-to-French",
+      "category": "credentials",
+      "risk": 22
     },
     {
-      "source_file": "..\\demo_data\\squirrel.jpg",
-      "kind": "software",
-      "value": "Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
-      "category": "device",
-      "risk": 4
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "English-to-German",
+      "category": "credentials",
+      "risk": 22
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "state-of-the-art",
+      "category": "credentials",
+      "risk": 22
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "English-to-French",
+      "category": "credentials",
+      "risk": 22
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "state-of-the-art",
+      "category": "credentials",
+      "risk": 22
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "English-to-French",
+      "category": "credentials",
+      "risk": 22
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "single-precision",
+      "category": "credentials",
+      "risk": 22
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "English-to-German",
+      "category": "credentials",
+      "risk": 22
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "English-to-German",
+      "category": "credentials",
+      "risk": 22
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "sequence-to-sequence",
+      "category": "credentials",
+      "risk": 22
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "state-of-the-art",
+      "category": "credentials",
+      "risk": 22
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "English-to-German",
+      "category": "credentials",
+      "risk": 22
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "sequence-to-sequence",
+      "category": "credentials",
+      "risk": 22
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "English-to-German",
+      "category": "credentials",
+      "risk": 22
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "English-to-French",
+      "category": "credentials",
+      "risk": 22
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "Acknowledgements",
+      "category": "credentials",
+      "risk": 22
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "value": "mixture-of-experts",
+      "category": "credentials",
+      "risk": 22
     }
   ],
   "attack_paths": [
     "Email \u2192 Phishing \u2192 Credential Theft",
-    "Phone \u2192 Smishing \u2192 Social Engineering",
-    "Aadhaar \u2192 Identity Theft \u2192 KYC Fraud",
-    "Token Exposure \u2192 Unauthorized Access",
-    "Cookie Theft \u2192 Session Hijacking"
+    "Token Exposure \u2192 Unauthorized Access"
   ],
   "recommendations": [
     {
@@ -233,24 +293,9 @@
       "reason": "Reduces phishing risk"
     },
     {
-      "issue": "Phone Exposure",
-      "action": "Redact phone numbers before sharing",
-      "reason": "Prevents smishing attacks"
-    },
-    {
-      "issue": "Aadhaar Exposure",
-      "action": "Mask Aadhaar numbers",
-      "reason": "Prevents identity theft"
-    },
-    {
       "issue": "API Token Exposure",
       "action": "Rotate exposed tokens",
       "reason": "Prevents unauthorized access"
-    },
-    {
-      "issue": "Browser Cookie Exposure",
-      "action": "Clear unnecessary cookies",
-      "reason": "Reduces tracking and session abuse"
     }
   ],
   "graph": {
@@ -261,606 +306,706 @@
         "type": "profile"
       },
       {
-        "id": "file_0_..\\demo_data\\book.jpg",
-        "label": "..\\demo_data\\book.jpg",
+        "id": "file_0_attention_is_all_you_need.pdf",
+        "label": "attention_is_all_you_need.pdf",
         "type": "file"
       },
       {
-        "id": "data_0_camera_make_SONY",
-        "label": "SONY",
+        "id": "data_0_email_avaswani@google.com",
+        "label": "avaswani@google.com",
         "type": "data"
       },
       {
-        "id": "file_1_..\\demo_data\\book.jpg",
-        "label": "..\\demo_data\\book.jpg",
+        "id": "file_1_attention_is_all_you_need.pdf",
+        "label": "attention_is_all_you_need.pdf",
         "type": "file"
       },
       {
-        "id": "data_1_camera_model_ILCE-7M2",
-        "label": "ILCE-7M2",
+        "id": "data_1_email_noam@google.com",
+        "label": "noam@google.com",
         "type": "data"
       },
       {
-        "id": "file_2_..\\demo_data\\book.jpg",
-        "label": "..\\demo_data\\book.jpg",
+        "id": "file_2_attention_is_all_you_need.pdf",
+        "label": "attention_is_all_you_need.pdf",
         "type": "file"
       },
       {
-        "id": "data_2_timestamp_2020:11:22 09:41:39",
-        "label": "2020:11:22 09:41:39",
+        "id": "data_2_email_nikip@google.com",
+        "label": "nikip@google.com",
         "type": "data"
       },
       {
-        "id": "file_3_..\\demo_data\\book.jpg",
-        "label": "..\\demo_data\\book.jpg",
+        "id": "file_3_attention_is_all_you_need.pdf",
+        "label": "attention_is_all_you_need.pdf",
         "type": "file"
       },
       {
-        "id": "data_3_software_Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
-        "label": "Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
+        "id": "data_3_email_usz@google.com",
+        "label": "usz@google.com",
         "type": "data"
       },
       {
-        "id": "file_4_..\\demo_data\\city.jpg",
-        "label": "..\\demo_data\\city.jpg",
+        "id": "file_4_attention_is_all_you_need.pdf",
+        "label": "attention_is_all_you_need.pdf",
         "type": "file"
       },
       {
-        "id": "data_4_camera_make_SONY",
-        "label": "SONY",
+        "id": "data_4_email_llion@google.com",
+        "label": "llion@google.com",
         "type": "data"
       },
       {
-        "id": "file_5_..\\demo_data\\city.jpg",
-        "label": "..\\demo_data\\city.jpg",
+        "id": "file_5_attention_is_all_you_need.pdf",
+        "label": "attention_is_all_you_need.pdf",
         "type": "file"
       },
       {
-        "id": "data_5_camera_model_ILCE-7M2",
-        "label": "ILCE-7M2",
+        "id": "data_5_email_aidan@cs.toronto.edu",
+        "label": "aidan@cs.toronto.edu",
         "type": "data"
       },
       {
-        "id": "file_6_..\\demo_data\\city.jpg",
-        "label": "..\\demo_data\\city.jpg",
+        "id": "file_6_attention_is_all_you_need.pdf",
+        "label": "attention_is_all_you_need.pdf",
         "type": "file"
       },
       {
-        "id": "data_6_timestamp_2020:11:21 15:54:31",
-        "label": "2020:11:21 15:54:31",
+        "id": "data_6_email_lukaszkaiser@google.com",
+        "label": "lukaszkaiser@google.com",
         "type": "data"
       },
       {
-        "id": "file_7_..\\demo_data\\city.jpg",
-        "label": "..\\demo_data\\city.jpg",
+        "id": "file_7_attention_is_all_you_need.pdf",
+        "label": "attention_is_all_you_need.pdf",
         "type": "file"
       },
       {
-        "id": "data_7_software_Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
-        "label": "Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
+        "id": "data_7_email_illia.polosukhin@gmail.com",
+        "label": "illia.polosukhin@gmail.com",
         "type": "data"
       },
       {
-        "id": "file_8_..\\demo_data\\city2.jpg",
-        "label": "..\\demo_data\\city2.jpg",
+        "id": "file_8_attention_is_all_you_need.pdf",
+        "label": "attention_is_all_you_need.pdf",
         "type": "file"
       },
       {
-        "id": "data_8_camera_make_SONY",
-        "label": "SONY",
+        "id": "data_8_url_https://github.com/",
+        "label": "https://github.com/",
         "type": "data"
       },
       {
-        "id": "file_9_..\\demo_data\\city2.jpg",
-        "label": "..\\demo_data\\city2.jpg",
+        "id": "file_9_attention_is_all_you_need.pdf",
+        "label": "attention_is_all_you_need.pdf",
         "type": "file"
       },
       {
-        "id": "data_9_camera_model_ILCE-7M2",
-        "label": "ILCE-7M2",
+        "id": "data_9_token_English-to-French",
+        "label": "English-to-French",
         "type": "data"
       },
       {
-        "id": "file_10_..\\demo_data\\city2.jpg",
-        "label": "..\\demo_data\\city2.jpg",
+        "id": "file_10_attention_is_all_you_need.pdf",
+        "label": "attention_is_all_you_need.pdf",
         "type": "file"
       },
       {
-        "id": "data_10_timestamp_2020:11:21 13:25:33",
-        "label": "2020:11:21 13:25:33",
+        "id": "data_10_token_state-of-the-art",
+        "label": "state-of-the-art",
         "type": "data"
       },
       {
-        "id": "file_11_..\\demo_data\\city2.jpg",
-        "label": "..\\demo_data\\city2.jpg",
+        "id": "file_11_attention_is_all_you_need.pdf",
+        "label": "attention_is_all_you_need.pdf",
         "type": "file"
       },
       {
-        "id": "data_11_software_Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
-        "label": "Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
+        "id": "data_11_token_attention-weighted",
+        "label": "attention-weighted",
         "type": "data"
       },
       {
-        "id": "file_12_..\\demo_data\\customer.txt",
-        "label": "..\\demo_data\\customer.txt",
+        "id": "file_12_attention_is_all_you_need.pdf",
+        "label": "attention_is_all_you_need.pdf",
         "type": "file"
       },
       {
-        "id": "data_12_email_john.doe@gmail.com",
-        "label": "john.doe@gmail.com",
+        "id": "data_12_token_task-independent",
+        "label": "task-independent",
         "type": "data"
       },
       {
-        "id": "file_13_..\\demo_data\\customer.txt",
-        "label": "..\\demo_data\\customer.txt",
+        "id": "file_13_attention_is_all_you_need.pdf",
+        "label": "attention_is_all_you_need.pdf",
         "type": "file"
       },
       {
-        "id": "data_13_phone_9876543210",
-        "label": "9876543210",
+        "id": "data_13_token_dmodel-dimensional",
+        "label": "dmodel-dimensional",
         "type": "data"
       },
       {
-        "id": "file_14_..\\demo_data\\customer.txt",
-        "label": "..\\demo_data\\customer.txt",
+        "id": "file_14_attention_is_all_you_need.pdf",
+        "label": "attention_is_all_you_need.pdf",
         "type": "file"
       },
       {
-        "id": "data_14_aadhaar_1234 5678 9012",
-        "label": "1234 5678 9012",
+        "id": "data_14_token_sequence-to-sequence",
+        "label": "sequence-to-sequence",
         "type": "data"
       },
       {
-        "id": "file_15_..\\demo_data\\customer.txt",
-        "label": "..\\demo_data\\customer.txt",
+        "id": "file_15_attention_is_all_you_need.pdf",
+        "label": "attention_is_all_you_need.pdf",
         "type": "file"
       },
       {
-        "id": "data_15_url_https://secure-bank.example",
-        "label": "https://secure-bank.example",
+        "id": "data_15_token_state-of-the-art",
+        "label": "state-of-the-art",
         "type": "data"
       },
       {
-        "id": "file_16_..\\demo_data\\customer.txt",
-        "label": "..\\demo_data\\customer.txt",
+        "id": "file_16_attention_is_all_you_need.pdf",
+        "label": "attention_is_all_you_need.pdf",
         "type": "file"
       },
       {
-        "id": "data_16_token_sk_test_ABCDEF1234567890",
-        "label": "sk_test_ABCDEF1234567890",
+        "id": "data_16_token_state-of-the-art",
+        "label": "state-of-the-art",
         "type": "data"
       },
       {
-        "id": "file_17_..\\demo_data\\employee.docx",
-        "label": "..\\demo_data\\employee.docx",
+        "id": "file_17_attention_is_all_you_need.pdf",
+        "label": "attention_is_all_you_need.pdf",
         "type": "file"
       },
       {
-        "id": "data_17_email_sarah.wilson@company.com",
-        "label": "sarah.wilson@company.com",
+        "id": "data_17_token_English-to-German",
+        "label": "English-to-German",
         "type": "data"
       },
       {
-        "id": "file_18_..\\demo_data\\employee.docx",
-        "label": "..\\demo_data\\employee.docx",
+        "id": "file_18_attention_is_all_you_need.pdf",
+        "label": "attention_is_all_you_need.pdf",
         "type": "file"
       },
       {
-        "id": "data_18_phone_9988776655",
-        "label": "9988776655",
+        "id": "data_18_token_English-to-French",
+        "label": "English-to-French",
         "type": "data"
       },
       {
-        "id": "file_19_..\\demo_data\\employee.docx",
-        "label": "..\\demo_data\\employee.docx",
+        "id": "file_19_attention_is_all_you_need.pdf",
+        "label": "attention_is_all_you_need.pdf",
         "type": "file"
       },
       {
-        "id": "data_19_phone_9123456789",
-        "label": "9123456789",
+        "id": "data_19_token_English-to-German",
+        "label": "English-to-German",
         "type": "data"
       },
       {
-        "id": "file_20_..\\demo_data\\employee.docx",
-        "label": "..\\demo_data\\employee.docx",
+        "id": "file_20_attention_is_all_you_need.pdf",
+        "label": "attention_is_all_you_need.pdf",
         "type": "file"
       },
       {
-        "id": "data_20_token_ghp_ABCD123456789XYZ987",
-        "label": "ghp_ABCD123456789XYZ987",
+        "id": "data_20_token_state-of-the-art",
+        "label": "state-of-the-art",
         "type": "data"
       },
       {
-        "id": "file_21_..\\demo_data\\fake_profile (1).pdf",
-        "label": "..\\demo_data\\fake_profile (1).pdf",
+        "id": "file_21_attention_is_all_you_need.pdf",
+        "label": "attention_is_all_you_need.pdf",
         "type": "file"
       },
       {
-        "id": "data_21_phone_1234567890",
-        "label": "1234567890",
+        "id": "data_21_token_English-to-French",
+        "label": "English-to-French",
         "type": "data"
       },
       {
-        "id": "file_22_..\\demo_data\\fake_profile (1).pdf",
-        "label": "..\\demo_data\\fake_profile (1).pdf",
+        "id": "file_22_attention_is_all_you_need.pdf",
+        "label": "attention_is_all_you_need.pdf",
         "type": "file"
       },
       {
-        "id": "data_22_aadhaar_1234 5678 9012",
-        "label": "1234 5678 9012",
+        "id": "data_22_token_state-of-the-art",
+        "label": "state-of-the-art",
         "type": "data"
       },
       {
-        "id": "file_23_..\\demo_data\\fake_profile.pdf",
-        "label": "..\\demo_data\\fake_profile.pdf",
+        "id": "file_23_attention_is_all_you_need.pdf",
+        "label": "attention_is_all_you_need.pdf",
         "type": "file"
       },
       {
-        "id": "data_23_email_priyanka.kapor@example.com",
-        "label": "priyanka.kapor@example.com",
+        "id": "data_23_token_English-to-French",
+        "label": "English-to-French",
         "type": "data"
       },
       {
-        "id": "file_24_..\\demo_data\\fake_profile.pdf",
-        "label": "..\\demo_data\\fake_profile.pdf",
+        "id": "file_24_attention_is_all_you_need.pdf",
+        "label": "attention_is_all_you_need.pdf",
         "type": "file"
       },
       {
-        "id": "data_24_phone_9876543210",
-        "label": "9876543210",
+        "id": "data_24_token_single-precision",
+        "label": "single-precision",
         "type": "data"
       },
       {
-        "id": "file_25_..\\demo_data\\fake_profile.pdf",
-        "label": "..\\demo_data\\fake_profile.pdf",
+        "id": "file_25_attention_is_all_you_need.pdf",
+        "label": "attention_is_all_you_need.pdf",
         "type": "file"
       },
       {
-        "id": "data_25_aadhaar_1234 5678 9012",
-        "label": "1234 5678 9012",
+        "id": "data_25_token_English-to-German",
+        "label": "English-to-German",
         "type": "data"
       },
       {
-        "id": "file_26_..\\demo_data\\squirrel.jpg",
-        "label": "..\\demo_data\\squirrel.jpg",
+        "id": "file_26_attention_is_all_you_need.pdf",
+        "label": "attention_is_all_you_need.pdf",
         "type": "file"
       },
       {
-        "id": "data_26_camera_make_FUJIFILM",
-        "label": "FUJIFILM",
+        "id": "data_26_token_English-to-German",
+        "label": "English-to-German",
         "type": "data"
       },
       {
-        "id": "file_27_..\\demo_data\\squirrel.jpg",
-        "label": "..\\demo_data\\squirrel.jpg",
+        "id": "file_27_attention_is_all_you_need.pdf",
+        "label": "attention_is_all_you_need.pdf",
         "type": "file"
       },
       {
-        "id": "data_27_camera_model_X100F",
-        "label": "X100F",
+        "id": "data_27_token_sequence-to-sequence",
+        "label": "sequence-to-sequence",
         "type": "data"
       },
       {
-        "id": "file_28_..\\demo_data\\squirrel.jpg",
-        "label": "..\\demo_data\\squirrel.jpg",
+        "id": "file_28_attention_is_all_you_need.pdf",
+        "label": "attention_is_all_you_need.pdf",
         "type": "file"
       },
       {
-        "id": "data_28_timestamp_2020:11:20 15:46:49",
-        "label": "2020:11:20 15:46:49",
+        "id": "data_28_token_state-of-the-art",
+        "label": "state-of-the-art",
         "type": "data"
       },
       {
-        "id": "file_29_..\\demo_data\\squirrel.jpg",
-        "label": "..\\demo_data\\squirrel.jpg",
+        "id": "file_29_attention_is_all_you_need.pdf",
+        "label": "attention_is_all_you_need.pdf",
         "type": "file"
       },
       {
-        "id": "data_29_software_Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
-        "label": "Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
+        "id": "data_29_token_English-to-German",
+        "label": "English-to-German",
+        "type": "data"
+      },
+      {
+        "id": "file_30_attention_is_all_you_need.pdf",
+        "label": "attention_is_all_you_need.pdf",
+        "type": "file"
+      },
+      {
+        "id": "data_30_token_sequence-to-sequence",
+        "label": "sequence-to-sequence",
+        "type": "data"
+      },
+      {
+        "id": "file_31_attention_is_all_you_need.pdf",
+        "label": "attention_is_all_you_need.pdf",
+        "type": "file"
+      },
+      {
+        "id": "data_31_token_English-to-German",
+        "label": "English-to-German",
+        "type": "data"
+      },
+      {
+        "id": "file_32_attention_is_all_you_need.pdf",
+        "label": "attention_is_all_you_need.pdf",
+        "type": "file"
+      },
+      {
+        "id": "data_32_token_English-to-French",
+        "label": "English-to-French",
+        "type": "data"
+      },
+      {
+        "id": "file_33_attention_is_all_you_need.pdf",
+        "label": "attention_is_all_you_need.pdf",
+        "type": "file"
+      },
+      {
+        "id": "data_33_token_Acknowledgements",
+        "label": "Acknowledgements",
+        "type": "data"
+      },
+      {
+        "id": "file_34_attention_is_all_you_need.pdf",
+        "label": "attention_is_all_you_need.pdf",
+        "type": "file"
+      },
+      {
+        "id": "data_34_token_mixture-of-experts",
+        "label": "mixture-of-experts",
         "type": "data"
       }
     ],
     "edges": [
       {
-        "source": "file_0_..\\demo_data\\book.jpg",
-        "target": "data_0_camera_make_SONY",
+        "source": "file_0_attention_is_all_you_need.pdf",
+        "target": "data_0_email_avaswani@google.com",
         "label": "contains"
       },
       {
-        "source": "data_0_camera_make_SONY",
-        "target": "profile_1",
-        "label": "device"
-      },
-      {
-        "source": "file_1_..\\demo_data\\book.jpg",
-        "target": "data_1_camera_model_ILCE-7M2",
-        "label": "contains"
-      },
-      {
-        "source": "data_1_camera_model_ILCE-7M2",
-        "target": "profile_1",
-        "label": "device"
-      },
-      {
-        "source": "file_2_..\\demo_data\\book.jpg",
-        "target": "data_2_timestamp_2020:11:22 09:41:39",
-        "label": "contains"
-      },
-      {
-        "source": "data_2_timestamp_2020:11:22 09:41:39",
-        "target": "profile_1",
-        "label": "behavioral"
-      },
-      {
-        "source": "file_3_..\\demo_data\\book.jpg",
-        "target": "data_3_software_Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
-        "label": "contains"
-      },
-      {
-        "source": "data_3_software_Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
-        "target": "profile_1",
-        "label": "device"
-      },
-      {
-        "source": "file_4_..\\demo_data\\city.jpg",
-        "target": "data_4_camera_make_SONY",
-        "label": "contains"
-      },
-      {
-        "source": "data_4_camera_make_SONY",
-        "target": "profile_1",
-        "label": "device"
-      },
-      {
-        "source": "file_5_..\\demo_data\\city.jpg",
-        "target": "data_5_camera_model_ILCE-7M2",
-        "label": "contains"
-      },
-      {
-        "source": "data_5_camera_model_ILCE-7M2",
-        "target": "profile_1",
-        "label": "device"
-      },
-      {
-        "source": "file_6_..\\demo_data\\city.jpg",
-        "target": "data_6_timestamp_2020:11:21 15:54:31",
-        "label": "contains"
-      },
-      {
-        "source": "data_6_timestamp_2020:11:21 15:54:31",
-        "target": "profile_1",
-        "label": "behavioral"
-      },
-      {
-        "source": "file_7_..\\demo_data\\city.jpg",
-        "target": "data_7_software_Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
-        "label": "contains"
-      },
-      {
-        "source": "data_7_software_Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
-        "target": "profile_1",
-        "label": "device"
-      },
-      {
-        "source": "file_8_..\\demo_data\\city2.jpg",
-        "target": "data_8_camera_make_SONY",
-        "label": "contains"
-      },
-      {
-        "source": "data_8_camera_make_SONY",
-        "target": "profile_1",
-        "label": "device"
-      },
-      {
-        "source": "file_9_..\\demo_data\\city2.jpg",
-        "target": "data_9_camera_model_ILCE-7M2",
-        "label": "contains"
-      },
-      {
-        "source": "data_9_camera_model_ILCE-7M2",
-        "target": "profile_1",
-        "label": "device"
-      },
-      {
-        "source": "file_10_..\\demo_data\\city2.jpg",
-        "target": "data_10_timestamp_2020:11:21 13:25:33",
-        "label": "contains"
-      },
-      {
-        "source": "data_10_timestamp_2020:11:21 13:25:33",
-        "target": "profile_1",
-        "label": "behavioral"
-      },
-      {
-        "source": "file_11_..\\demo_data\\city2.jpg",
-        "target": "data_11_software_Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
-        "label": "contains"
-      },
-      {
-        "source": "data_11_software_Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
-        "target": "profile_1",
-        "label": "device"
-      },
-      {
-        "source": "file_12_..\\demo_data\\customer.txt",
-        "target": "data_12_email_john.doe@gmail.com",
-        "label": "contains"
-      },
-      {
-        "source": "data_12_email_john.doe@gmail.com",
+        "source": "data_0_email_avaswani@google.com",
         "target": "profile_1",
         "label": "identity"
       },
       {
-        "source": "file_13_..\\demo_data\\customer.txt",
-        "target": "data_13_phone_9876543210",
+        "source": "file_1_attention_is_all_you_need.pdf",
+        "target": "data_1_email_noam@google.com",
         "label": "contains"
       },
       {
-        "source": "data_13_phone_9876543210",
+        "source": "data_1_email_noam@google.com",
         "target": "profile_1",
-        "label": "contact"
+        "label": "identity"
       },
       {
-        "source": "file_14_..\\demo_data\\customer.txt",
-        "target": "data_14_aadhaar_1234 5678 9012",
+        "source": "file_2_attention_is_all_you_need.pdf",
+        "target": "data_2_email_nikip@google.com",
         "label": "contains"
       },
       {
-        "source": "data_14_aadhaar_1234 5678 9012",
+        "source": "data_2_email_nikip@google.com",
         "target": "profile_1",
-        "label": "government_id"
+        "label": "identity"
       },
       {
-        "source": "file_15_..\\demo_data\\customer.txt",
-        "target": "data_15_url_https://secure-bank.example",
+        "source": "file_3_attention_is_all_you_need.pdf",
+        "target": "data_3_email_usz@google.com",
         "label": "contains"
       },
       {
-        "source": "data_15_url_https://secure-bank.example",
+        "source": "data_3_email_usz@google.com",
+        "target": "profile_1",
+        "label": "identity"
+      },
+      {
+        "source": "file_4_attention_is_all_you_need.pdf",
+        "target": "data_4_email_llion@google.com",
+        "label": "contains"
+      },
+      {
+        "source": "data_4_email_llion@google.com",
+        "target": "profile_1",
+        "label": "identity"
+      },
+      {
+        "source": "file_5_attention_is_all_you_need.pdf",
+        "target": "data_5_email_aidan@cs.toronto.edu",
+        "label": "contains"
+      },
+      {
+        "source": "data_5_email_aidan@cs.toronto.edu",
+        "target": "profile_1",
+        "label": "identity"
+      },
+      {
+        "source": "file_6_attention_is_all_you_need.pdf",
+        "target": "data_6_email_lukaszkaiser@google.com",
+        "label": "contains"
+      },
+      {
+        "source": "data_6_email_lukaszkaiser@google.com",
+        "target": "profile_1",
+        "label": "identity"
+      },
+      {
+        "source": "file_7_attention_is_all_you_need.pdf",
+        "target": "data_7_email_illia.polosukhin@gmail.com",
+        "label": "contains"
+      },
+      {
+        "source": "data_7_email_illia.polosukhin@gmail.com",
+        "target": "profile_1",
+        "label": "identity"
+      },
+      {
+        "source": "file_8_attention_is_all_you_need.pdf",
+        "target": "data_8_url_https://github.com/",
+        "label": "contains"
+      },
+      {
+        "source": "data_8_url_https://github.com/",
         "target": "profile_1",
         "label": "behavioral"
       },
       {
-        "source": "file_16_..\\demo_data\\customer.txt",
-        "target": "data_16_token_sk_test_ABCDEF1234567890",
+        "source": "file_9_attention_is_all_you_need.pdf",
+        "target": "data_9_token_English-to-French",
         "label": "contains"
       },
       {
-        "source": "data_16_token_sk_test_ABCDEF1234567890",
+        "source": "data_9_token_English-to-French",
         "target": "profile_1",
         "label": "credentials"
       },
       {
-        "source": "file_17_..\\demo_data\\employee.docx",
-        "target": "data_17_email_sarah.wilson@company.com",
+        "source": "file_10_attention_is_all_you_need.pdf",
+        "target": "data_10_token_state-of-the-art",
         "label": "contains"
       },
       {
-        "source": "data_17_email_sarah.wilson@company.com",
-        "target": "profile_1",
-        "label": "identity"
-      },
-      {
-        "source": "file_18_..\\demo_data\\employee.docx",
-        "target": "data_18_phone_9988776655",
-        "label": "contains"
-      },
-      {
-        "source": "data_18_phone_9988776655",
-        "target": "profile_1",
-        "label": "contact"
-      },
-      {
-        "source": "file_19_..\\demo_data\\employee.docx",
-        "target": "data_19_phone_9123456789",
-        "label": "contains"
-      },
-      {
-        "source": "data_19_phone_9123456789",
-        "target": "profile_1",
-        "label": "contact"
-      },
-      {
-        "source": "file_20_..\\demo_data\\employee.docx",
-        "target": "data_20_token_ghp_ABCD123456789XYZ987",
-        "label": "contains"
-      },
-      {
-        "source": "data_20_token_ghp_ABCD123456789XYZ987",
+        "source": "data_10_token_state-of-the-art",
         "target": "profile_1",
         "label": "credentials"
       },
       {
-        "source": "file_21_..\\demo_data\\fake_profile (1).pdf",
-        "target": "data_21_phone_1234567890",
+        "source": "file_11_attention_is_all_you_need.pdf",
+        "target": "data_11_token_attention-weighted",
         "label": "contains"
       },
       {
-        "source": "data_21_phone_1234567890",
+        "source": "data_11_token_attention-weighted",
         "target": "profile_1",
-        "label": "contact"
+        "label": "credentials"
       },
       {
-        "source": "file_22_..\\demo_data\\fake_profile (1).pdf",
-        "target": "data_22_aadhaar_1234 5678 9012",
+        "source": "file_12_attention_is_all_you_need.pdf",
+        "target": "data_12_token_task-independent",
         "label": "contains"
       },
       {
-        "source": "data_22_aadhaar_1234 5678 9012",
+        "source": "data_12_token_task-independent",
         "target": "profile_1",
-        "label": "government_id"
+        "label": "credentials"
       },
       {
-        "source": "file_23_..\\demo_data\\fake_profile.pdf",
-        "target": "data_23_email_priyanka.kapor@example.com",
+        "source": "file_13_attention_is_all_you_need.pdf",
+        "target": "data_13_token_dmodel-dimensional",
         "label": "contains"
       },
       {
-        "source": "data_23_email_priyanka.kapor@example.com",
+        "source": "data_13_token_dmodel-dimensional",
         "target": "profile_1",
-        "label": "identity"
+        "label": "credentials"
       },
       {
-        "source": "file_24_..\\demo_data\\fake_profile.pdf",
-        "target": "data_24_phone_9876543210",
+        "source": "file_14_attention_is_all_you_need.pdf",
+        "target": "data_14_token_sequence-to-sequence",
         "label": "contains"
       },
       {
-        "source": "data_24_phone_9876543210",
+        "source": "data_14_token_sequence-to-sequence",
         "target": "profile_1",
-        "label": "contact"
+        "label": "credentials"
       },
       {
-        "source": "file_25_..\\demo_data\\fake_profile.pdf",
-        "target": "data_25_aadhaar_1234 5678 9012",
+        "source": "file_15_attention_is_all_you_need.pdf",
+        "target": "data_15_token_state-of-the-art",
         "label": "contains"
       },
       {
-        "source": "data_25_aadhaar_1234 5678 9012",
+        "source": "data_15_token_state-of-the-art",
         "target": "profile_1",
-        "label": "government_id"
+        "label": "credentials"
       },
       {
-        "source": "file_26_..\\demo_data\\squirrel.jpg",
-        "target": "data_26_camera_make_FUJIFILM",
+        "source": "file_16_attention_is_all_you_need.pdf",
+        "target": "data_16_token_state-of-the-art",
         "label": "contains"
       },
       {
-        "source": "data_26_camera_make_FUJIFILM",
+        "source": "data_16_token_state-of-the-art",
         "target": "profile_1",
-        "label": "device"
+        "label": "credentials"
       },
       {
-        "source": "file_27_..\\demo_data\\squirrel.jpg",
-        "target": "data_27_camera_model_X100F",
+        "source": "file_17_attention_is_all_you_need.pdf",
+        "target": "data_17_token_English-to-German",
         "label": "contains"
       },
       {
-        "source": "data_27_camera_model_X100F",
+        "source": "data_17_token_English-to-German",
         "target": "profile_1",
-        "label": "device"
+        "label": "credentials"
       },
       {
-        "source": "file_28_..\\demo_data\\squirrel.jpg",
-        "target": "data_28_timestamp_2020:11:20 15:46:49",
+        "source": "file_18_attention_is_all_you_need.pdf",
+        "target": "data_18_token_English-to-French",
         "label": "contains"
       },
       {
-        "source": "data_28_timestamp_2020:11:20 15:46:49",
+        "source": "data_18_token_English-to-French",
         "target": "profile_1",
-        "label": "behavioral"
+        "label": "credentials"
       },
       {
-        "source": "file_29_..\\demo_data\\squirrel.jpg",
-        "target": "data_29_software_Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
+        "source": "file_19_attention_is_all_you_need.pdf",
+        "target": "data_19_token_English-to-German",
         "label": "contains"
       },
       {
-        "source": "data_29_software_Adobe Photoshop Lightroom Classic 10.0 (Macintosh)",
+        "source": "data_19_token_English-to-German",
         "target": "profile_1",
-        "label": "device"
+        "label": "credentials"
+      },
+      {
+        "source": "file_20_attention_is_all_you_need.pdf",
+        "target": "data_20_token_state-of-the-art",
+        "label": "contains"
+      },
+      {
+        "source": "data_20_token_state-of-the-art",
+        "target": "profile_1",
+        "label": "credentials"
+      },
+      {
+        "source": "file_21_attention_is_all_you_need.pdf",
+        "target": "data_21_token_English-to-French",
+        "label": "contains"
+      },
+      {
+        "source": "data_21_token_English-to-French",
+        "target": "profile_1",
+        "label": "credentials"
+      },
+      {
+        "source": "file_22_attention_is_all_you_need.pdf",
+        "target": "data_22_token_state-of-the-art",
+        "label": "contains"
+      },
+      {
+        "source": "data_22_token_state-of-the-art",
+        "target": "profile_1",
+        "label": "credentials"
+      },
+      {
+        "source": "file_23_attention_is_all_you_need.pdf",
+        "target": "data_23_token_English-to-French",
+        "label": "contains"
+      },
+      {
+        "source": "data_23_token_English-to-French",
+        "target": "profile_1",
+        "label": "credentials"
+      },
+      {
+        "source": "file_24_attention_is_all_you_need.pdf",
+        "target": "data_24_token_single-precision",
+        "label": "contains"
+      },
+      {
+        "source": "data_24_token_single-precision",
+        "target": "profile_1",
+        "label": "credentials"
+      },
+      {
+        "source": "file_25_attention_is_all_you_need.pdf",
+        "target": "data_25_token_English-to-German",
+        "label": "contains"
+      },
+      {
+        "source": "data_25_token_English-to-German",
+        "target": "profile_1",
+        "label": "credentials"
+      },
+      {
+        "source": "file_26_attention_is_all_you_need.pdf",
+        "target": "data_26_token_English-to-German",
+        "label": "contains"
+      },
+      {
+        "source": "data_26_token_English-to-German",
+        "target": "profile_1",
+        "label": "credentials"
+      },
+      {
+        "source": "file_27_attention_is_all_you_need.pdf",
+        "target": "data_27_token_sequence-to-sequence",
+        "label": "contains"
+      },
+      {
+        "source": "data_27_token_sequence-to-sequence",
+        "target": "profile_1",
+        "label": "credentials"
+      },
+      {
+        "source": "file_28_attention_is_all_you_need.pdf",
+        "target": "data_28_token_state-of-the-art",
+        "label": "contains"
+      },
+      {
+        "source": "data_28_token_state-of-the-art",
+        "target": "profile_1",
+        "label": "credentials"
+      },
+      {
+        "source": "file_29_attention_is_all_you_need.pdf",
+        "target": "data_29_token_English-to-German",
+        "label": "contains"
+      },
+      {
+        "source": "data_29_token_English-to-German",
+        "target": "profile_1",
+        "label": "credentials"
+      },
+      {
+        "source": "file_30_attention_is_all_you_need.pdf",
+        "target": "data_30_token_sequence-to-sequence",
+        "label": "contains"
+      },
+      {
+        "source": "data_30_token_sequence-to-sequence",
+        "target": "profile_1",
+        "label": "credentials"
+      },
+      {
+        "source": "file_31_attention_is_all_you_need.pdf",
+        "target": "data_31_token_English-to-German",
+        "label": "contains"
+      },
+      {
+        "source": "data_31_token_English-to-German",
+        "target": "profile_1",
+        "label": "credentials"
+      },
+      {
+        "source": "file_32_attention_is_all_you_need.pdf",
+        "target": "data_32_token_English-to-French",
+        "label": "contains"
+      },
+      {
+        "source": "data_32_token_English-to-French",
+        "target": "profile_1",
+        "label": "credentials"
+      },
+      {
+        "source": "file_33_attention_is_all_you_need.pdf",
+        "target": "data_33_token_Acknowledgements",
+        "label": "contains"
+      },
+      {
+        "source": "data_33_token_Acknowledgements",
+        "target": "profile_1",
+        "label": "credentials"
+      },
+      {
+        "source": "file_34_attention_is_all_you_need.pdf",
+        "target": "data_34_token_mixture-of-experts",
+        "label": "contains"
+      },
+      {
+        "source": "data_34_token_mixture-of-experts",
+        "target": "profile_1",
+        "label": "credentials"
       }
     ]
   },
@@ -868,451 +1013,570 @@
     {
       "time": 0,
       "event": "sensitive_data_found",
-      "source_file": "..\\demo_data\\book.jpg",
-      "details": "camera_make: SONY"
+      "source_file": "attention_is_all_you_need.pdf",
+      "details": "email: avaswani@google.com"
     },
     {
       "time": 0,
       "event": "sensitive_data_found",
-      "source_file": "..\\demo_data\\book.jpg",
-      "details": "camera_model: ILCE-7M2"
+      "source_file": "attention_is_all_you_need.pdf",
+      "details": "email: noam@google.com"
     },
     {
       "time": 0,
       "event": "sensitive_data_found",
-      "source_file": "..\\demo_data\\book.jpg",
-      "details": "timestamp: 2020:11:22 09:41:39"
+      "source_file": "attention_is_all_you_need.pdf",
+      "details": "email: nikip@google.com"
     },
     {
       "time": 0,
       "event": "sensitive_data_found",
-      "source_file": "..\\demo_data\\book.jpg",
-      "details": "software: Adobe Photoshop Lightroom Classic 10.0 (Macintosh)"
+      "source_file": "attention_is_all_you_need.pdf",
+      "details": "email: usz@google.com"
     },
     {
       "time": 0,
       "event": "sensitive_data_found",
-      "source_file": "..\\demo_data\\city.jpg",
-      "details": "camera_make: SONY"
+      "source_file": "attention_is_all_you_need.pdf",
+      "details": "email: llion@google.com"
     },
     {
       "time": 0,
       "event": "sensitive_data_found",
-      "source_file": "..\\demo_data\\city.jpg",
-      "details": "camera_model: ILCE-7M2"
+      "source_file": "attention_is_all_you_need.pdf",
+      "details": "email: aidan@cs.toronto.edu"
     },
     {
       "time": 0,
       "event": "sensitive_data_found",
-      "source_file": "..\\demo_data\\city.jpg",
-      "details": "timestamp: 2020:11:21 15:54:31"
+      "source_file": "attention_is_all_you_need.pdf",
+      "details": "email: lukaszkaiser@google.com"
     },
     {
       "time": 0,
       "event": "sensitive_data_found",
-      "source_file": "..\\demo_data\\city.jpg",
-      "details": "software: Adobe Photoshop Lightroom Classic 10.0 (Macintosh)"
+      "source_file": "attention_is_all_you_need.pdf",
+      "details": "email: illia.polosukhin@gmail.com"
     },
     {
       "time": 0,
       "event": "sensitive_data_found",
-      "source_file": "..\\demo_data\\city2.jpg",
-      "details": "camera_make: SONY"
+      "source_file": "attention_is_all_you_need.pdf",
+      "details": "url: https://github.com/"
     },
     {
       "time": 0,
       "event": "sensitive_data_found",
-      "source_file": "..\\demo_data\\city2.jpg",
-      "details": "camera_model: ILCE-7M2"
+      "source_file": "attention_is_all_you_need.pdf",
+      "details": "token: English-to-French"
     },
     {
       "time": 0,
       "event": "sensitive_data_found",
-      "source_file": "..\\demo_data\\city2.jpg",
-      "details": "timestamp: 2020:11:21 13:25:33"
+      "source_file": "attention_is_all_you_need.pdf",
+      "details": "token: state-of-the-art"
     },
     {
       "time": 0,
       "event": "sensitive_data_found",
-      "source_file": "..\\demo_data\\city2.jpg",
-      "details": "software: Adobe Photoshop Lightroom Classic 10.0 (Macintosh)"
+      "source_file": "attention_is_all_you_need.pdf",
+      "details": "token: attention-weighted"
     },
     {
       "time": 0,
       "event": "sensitive_data_found",
-      "source_file": "..\\demo_data\\customer.txt",
-      "details": "email: john.doe@gmail.com"
+      "source_file": "attention_is_all_you_need.pdf",
+      "details": "token: task-independent"
     },
     {
       "time": 0,
       "event": "sensitive_data_found",
-      "source_file": "..\\demo_data\\customer.txt",
-      "details": "phone: 9876543210"
+      "source_file": "attention_is_all_you_need.pdf",
+      "details": "token: dmodel-dimensional"
     },
     {
       "time": 0,
       "event": "sensitive_data_found",
-      "source_file": "..\\demo_data\\customer.txt",
-      "details": "aadhaar: 1234 5678 9012"
+      "source_file": "attention_is_all_you_need.pdf",
+      "details": "token: sequence-to-sequence"
     },
     {
       "time": 0,
       "event": "sensitive_data_found",
-      "source_file": "..\\demo_data\\customer.txt",
-      "details": "url: https://secure-bank.example"
+      "source_file": "attention_is_all_you_need.pdf",
+      "details": "token: state-of-the-art"
     },
     {
       "time": 0,
       "event": "sensitive_data_found",
-      "source_file": "..\\demo_data\\customer.txt",
-      "details": "token: sk_test_ABCDEF1234567890"
+      "source_file": "attention_is_all_you_need.pdf",
+      "details": "token: state-of-the-art"
     },
     {
       "time": 0,
       "event": "sensitive_data_found",
-      "source_file": "..\\demo_data\\employee.docx",
-      "details": "email: sarah.wilson@company.com"
+      "source_file": "attention_is_all_you_need.pdf",
+      "details": "token: English-to-German"
     },
     {
       "time": 0,
       "event": "sensitive_data_found",
-      "source_file": "..\\demo_data\\employee.docx",
-      "details": "phone: 9988776655"
+      "source_file": "attention_is_all_you_need.pdf",
+      "details": "token: English-to-French"
     },
     {
       "time": 0,
       "event": "sensitive_data_found",
-      "source_file": "..\\demo_data\\employee.docx",
-      "details": "phone: 9123456789"
+      "source_file": "attention_is_all_you_need.pdf",
+      "details": "token: English-to-German"
     },
     {
       "time": 0,
       "event": "sensitive_data_found",
-      "source_file": "..\\demo_data\\employee.docx",
-      "details": "token: ghp_ABCD123456789XYZ987"
+      "source_file": "attention_is_all_you_need.pdf",
+      "details": "token: state-of-the-art"
     },
     {
       "time": 0,
       "event": "sensitive_data_found",
-      "source_file": "..\\demo_data\\fake_profile (1).pdf",
-      "details": "phone: 1234567890"
+      "source_file": "attention_is_all_you_need.pdf",
+      "details": "token: English-to-French"
     },
     {
       "time": 0,
       "event": "sensitive_data_found",
-      "source_file": "..\\demo_data\\fake_profile (1).pdf",
-      "details": "aadhaar: 1234 5678 9012"
+      "source_file": "attention_is_all_you_need.pdf",
+      "details": "token: state-of-the-art"
     },
     {
       "time": 0,
       "event": "sensitive_data_found",
-      "source_file": "..\\demo_data\\fake_profile.pdf",
-      "details": "email: priyanka.kapor@example.com"
+      "source_file": "attention_is_all_you_need.pdf",
+      "details": "token: English-to-French"
     },
     {
       "time": 0,
       "event": "sensitive_data_found",
-      "source_file": "..\\demo_data\\fake_profile.pdf",
-      "details": "phone: 9876543210"
+      "source_file": "attention_is_all_you_need.pdf",
+      "details": "token: single-precision"
     },
     {
       "time": 0,
       "event": "sensitive_data_found",
-      "source_file": "..\\demo_data\\fake_profile.pdf",
-      "details": "aadhaar: 1234 5678 9012"
+      "source_file": "attention_is_all_you_need.pdf",
+      "details": "token: English-to-German"
     },
     {
       "time": 0,
       "event": "sensitive_data_found",
-      "source_file": "..\\demo_data\\squirrel.jpg",
-      "details": "camera_make: FUJIFILM"
+      "source_file": "attention_is_all_you_need.pdf",
+      "details": "token: English-to-German"
     },
     {
       "time": 0,
       "event": "sensitive_data_found",
-      "source_file": "..\\demo_data\\squirrel.jpg",
-      "details": "camera_model: X100F"
+      "source_file": "attention_is_all_you_need.pdf",
+      "details": "token: sequence-to-sequence"
     },
     {
       "time": 0,
       "event": "sensitive_data_found",
-      "source_file": "..\\demo_data\\squirrel.jpg",
-      "details": "timestamp: 2020:11:20 15:46:49"
+      "source_file": "attention_is_all_you_need.pdf",
+      "details": "token: state-of-the-art"
     },
     {
       "time": 0,
       "event": "sensitive_data_found",
-      "source_file": "..\\demo_data\\squirrel.jpg",
-      "details": "software: Adobe Photoshop Lightroom Classic 10.0 (Macintosh)"
+      "source_file": "attention_is_all_you_need.pdf",
+      "details": "token: English-to-German"
     },
     {
-      "time": 1780673030.0728972,
+      "time": 0,
+      "event": "sensitive_data_found",
+      "source_file": "attention_is_all_you_need.pdf",
+      "details": "token: sequence-to-sequence"
+    },
+    {
+      "time": 0,
+      "event": "sensitive_data_found",
+      "source_file": "attention_is_all_you_need.pdf",
+      "details": "token: English-to-German"
+    },
+    {
+      "time": 0,
+      "event": "sensitive_data_found",
+      "source_file": "attention_is_all_you_need.pdf",
+      "details": "token: English-to-French"
+    },
+    {
+      "time": 0,
+      "event": "sensitive_data_found",
+      "source_file": "attention_is_all_you_need.pdf",
+      "details": "token: Acknowledgements"
+    },
+    {
+      "time": 0,
+      "event": "sensitive_data_found",
+      "source_file": "attention_is_all_you_need.pdf",
+      "details": "token: mixture-of-experts"
+    },
+    {
+      "time": 1792782258.0836036,
       "event": "file_scanned",
-      "source_file": "..\\demo_data\\fake_profile (1).pdf",
-      "details": "fake_profile (1).pdf"
-    },
-    {
-      "time": 1780677593.4240148,
-      "event": "file_scanned",
-      "source_file": "..\\demo_data\\customer.txt",
-      "details": "customer.txt"
-    },
-    {
-      "time": 1780680359.4152367,
-      "event": "file_scanned",
-      "source_file": "..\\demo_data\\~$ployee.docx",
-      "details": "~$ployee.docx"
-    },
-    {
-      "time": 1780680401.4384658,
-      "event": "file_scanned",
-      "source_file": "..\\demo_data\\employee.docx",
-      "details": "employee.docx"
-    },
-    {
-      "time": 1780691376.601133,
-      "event": "file_scanned",
-      "source_file": "..\\demo_data\\fake_profile.pdf",
-      "details": "fake_profile.pdf"
-    },
-    {
-      "time": 1780692002.7939217,
-      "event": "file_scanned",
-      "source_file": "..\\demo_data\\images.jpg",
-      "details": "images.jpg"
-    },
-    {
-      "time": 1780692040.3941746,
-      "event": "file_scanned",
-      "source_file": "..\\demo_data\\squirrel.jpg",
-      "details": "squirrel.jpg"
-    },
-    {
-      "time": 1780692082.7565882,
-      "event": "file_scanned",
-      "source_file": "..\\demo_data\\city.jpg",
-      "details": "city.jpg"
-    },
-    {
-      "time": 1780692350.2414877,
-      "event": "file_scanned",
-      "source_file": "..\\demo_data\\book.jpg",
-      "details": "book.jpg"
-    },
-    {
-      "time": 1780692366.1847405,
-      "event": "file_scanned",
-      "source_file": "..\\demo_data\\city2.jpg",
-      "details": "city2.jpg"
-    },
-    {
-      "time": 1780701968.9935038,
-      "event": "file_scanned",
-      "source_file": "..\\demo_data\\sample1.jpeg",
-      "details": "sample1.jpeg"
+      "source_file": "attention_is_all_you_need.pdf",
+      "details": "attention_is_all_you_need.pdf"
     }
   ],
   "remediations": [
     {
-      "source_file": "..\\demo_data\\book.jpg",
-      "kind": "camera_make",
-      "category": "device",
-      "action": "review file and remove unnecessary personal data"
-    },
-    {
-      "source_file": "..\\demo_data\\book.jpg",
-      "kind": "camera_model",
-      "category": "device",
-      "action": "review file and remove unnecessary personal data"
-    },
-    {
-      "source_file": "..\\demo_data\\book.jpg",
-      "kind": "timestamp",
-      "category": "behavioral",
-      "action": "review file and remove unnecessary personal data"
-    },
-    {
-      "source_file": "..\\demo_data\\book.jpg",
-      "kind": "software",
-      "category": "device",
-      "action": "review file and remove unnecessary personal data"
-    },
-    {
-      "source_file": "..\\demo_data\\city.jpg",
-      "kind": "camera_make",
-      "category": "device",
-      "action": "review file and remove unnecessary personal data"
-    },
-    {
-      "source_file": "..\\demo_data\\city.jpg",
-      "kind": "camera_model",
-      "category": "device",
-      "action": "review file and remove unnecessary personal data"
-    },
-    {
-      "source_file": "..\\demo_data\\city.jpg",
-      "kind": "timestamp",
-      "category": "behavioral",
-      "action": "review file and remove unnecessary personal data"
-    },
-    {
-      "source_file": "..\\demo_data\\city.jpg",
-      "kind": "software",
-      "category": "device",
-      "action": "review file and remove unnecessary personal data"
-    },
-    {
-      "source_file": "..\\demo_data\\city2.jpg",
-      "kind": "camera_make",
-      "category": "device",
-      "action": "review file and remove unnecessary personal data"
-    },
-    {
-      "source_file": "..\\demo_data\\city2.jpg",
-      "kind": "camera_model",
-      "category": "device",
-      "action": "review file and remove unnecessary personal data"
-    },
-    {
-      "source_file": "..\\demo_data\\city2.jpg",
-      "kind": "timestamp",
-      "category": "behavioral",
-      "action": "review file and remove unnecessary personal data"
-    },
-    {
-      "source_file": "..\\demo_data\\city2.jpg",
-      "kind": "software",
-      "category": "device",
-      "action": "review file and remove unnecessary personal data"
-    },
-    {
-      "source_file": "..\\demo_data\\customer.txt",
+      "source_file": "attention_is_all_you_need.pdf",
       "kind": "email",
       "category": "identity",
-      "action": "review file and remove unnecessary personal data"
+      "act": "DPDP Act, 2023",
+      "principle": "Data minimization",
+      "obligation": "Avoid unnecessary disclosure of personal data",
+      "action": "Remove email addresses from public documents",
+      "reason": "Reduces phishing risk"
     },
     {
-      "source_file": "..\\demo_data\\customer.txt",
-      "kind": "phone",
-      "category": "contact",
-      "action": "review and minimize exposure"
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "email",
+      "category": "identity",
+      "act": "DPDP Act, 2023",
+      "principle": "Data minimization",
+      "obligation": "Avoid unnecessary disclosure of personal data",
+      "action": "Remove email addresses from public documents",
+      "reason": "Reduces phishing risk"
     },
     {
-      "source_file": "..\\demo_data\\customer.txt",
-      "kind": "aadhaar",
-      "category": "government_id",
-      "action": "move sensitive ID to encrypted vault"
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "email",
+      "category": "identity",
+      "act": "DPDP Act, 2023",
+      "principle": "Data minimization",
+      "obligation": "Avoid unnecessary disclosure of personal data",
+      "action": "Remove email addresses from public documents",
+      "reason": "Reduces phishing risk"
     },
     {
-      "source_file": "..\\demo_data\\customer.txt",
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "email",
+      "category": "identity",
+      "act": "DPDP Act, 2023",
+      "principle": "Data minimization",
+      "obligation": "Avoid unnecessary disclosure of personal data",
+      "action": "Remove email addresses from public documents",
+      "reason": "Reduces phishing risk"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "email",
+      "category": "identity",
+      "act": "DPDP Act, 2023",
+      "principle": "Data minimization",
+      "obligation": "Avoid unnecessary disclosure of personal data",
+      "action": "Remove email addresses from public documents",
+      "reason": "Reduces phishing risk"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "email",
+      "category": "identity",
+      "act": "DPDP Act, 2023",
+      "principle": "Data minimization",
+      "obligation": "Avoid unnecessary disclosure of personal data",
+      "action": "Remove email addresses from public documents",
+      "reason": "Reduces phishing risk"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "email",
+      "category": "identity",
+      "act": "DPDP Act, 2023",
+      "principle": "Data minimization",
+      "obligation": "Avoid unnecessary disclosure of personal data",
+      "action": "Remove email addresses from public documents",
+      "reason": "Reduces phishing risk"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "email",
+      "category": "identity",
+      "act": "DPDP Act, 2023",
+      "principle": "Data minimization",
+      "obligation": "Avoid unnecessary disclosure of personal data",
+      "action": "Remove email addresses from public documents",
+      "reason": "Reduces phishing risk"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
       "kind": "url",
       "category": "behavioral",
-      "action": "review file and remove unnecessary personal data"
+      "act": "DPDP Act, 2023",
+      "principle": "Data minimization",
+      "obligation": "Limit processing to necessary personal data",
+      "action": "Review file and remove unnecessary personal data",
+      "reason": "Reduces exposure"
     },
     {
-      "source_file": "..\\demo_data\\customer.txt",
+      "source_file": "attention_is_all_you_need.pdf",
       "kind": "token",
       "category": "credentials",
-      "action": "remove or rotate credentials"
+      "act": "DPDP Act, 2023",
+      "principle": "Security safeguards and accountability",
+      "obligation": "Prevent unauthorized access and account compromise",
+      "action": "Rotate exposed tokens",
+      "reason": "Prevents unauthorized access"
     },
     {
-      "source_file": "..\\demo_data\\employee.docx",
-      "kind": "email",
-      "category": "identity",
-      "action": "review file and remove unnecessary personal data"
-    },
-    {
-      "source_file": "..\\demo_data\\employee.docx",
-      "kind": "phone",
-      "category": "contact",
-      "action": "review and minimize exposure"
-    },
-    {
-      "source_file": "..\\demo_data\\employee.docx",
-      "kind": "phone",
-      "category": "contact",
-      "action": "review and minimize exposure"
-    },
-    {
-      "source_file": "..\\demo_data\\employee.docx",
+      "source_file": "attention_is_all_you_need.pdf",
       "kind": "token",
       "category": "credentials",
-      "action": "remove or rotate credentials"
+      "act": "DPDP Act, 2023",
+      "principle": "Security safeguards and accountability",
+      "obligation": "Prevent unauthorized access and account compromise",
+      "action": "Rotate exposed tokens",
+      "reason": "Prevents unauthorized access"
     },
     {
-      "source_file": "..\\demo_data\\fake_profile (1).pdf",
-      "kind": "phone",
-      "category": "contact",
-      "action": "review and minimize exposure"
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "category": "credentials",
+      "act": "DPDP Act, 2023",
+      "principle": "Security safeguards and accountability",
+      "obligation": "Prevent unauthorized access and account compromise",
+      "action": "Rotate exposed tokens",
+      "reason": "Prevents unauthorized access"
     },
     {
-      "source_file": "..\\demo_data\\fake_profile (1).pdf",
-      "kind": "aadhaar",
-      "category": "government_id",
-      "action": "move sensitive ID to encrypted vault"
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "category": "credentials",
+      "act": "DPDP Act, 2023",
+      "principle": "Security safeguards and accountability",
+      "obligation": "Prevent unauthorized access and account compromise",
+      "action": "Rotate exposed tokens",
+      "reason": "Prevents unauthorized access"
     },
     {
-      "source_file": "..\\demo_data\\fake_profile.pdf",
-      "kind": "email",
-      "category": "identity",
-      "action": "review file and remove unnecessary personal data"
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "category": "credentials",
+      "act": "DPDP Act, 2023",
+      "principle": "Security safeguards and accountability",
+      "obligation": "Prevent unauthorized access and account compromise",
+      "action": "Rotate exposed tokens",
+      "reason": "Prevents unauthorized access"
     },
     {
-      "source_file": "..\\demo_data\\fake_profile.pdf",
-      "kind": "phone",
-      "category": "contact",
-      "action": "review and minimize exposure"
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "category": "credentials",
+      "act": "DPDP Act, 2023",
+      "principle": "Security safeguards and accountability",
+      "obligation": "Prevent unauthorized access and account compromise",
+      "action": "Rotate exposed tokens",
+      "reason": "Prevents unauthorized access"
     },
     {
-      "source_file": "..\\demo_data\\fake_profile.pdf",
-      "kind": "aadhaar",
-      "category": "government_id",
-      "action": "move sensitive ID to encrypted vault"
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "category": "credentials",
+      "act": "DPDP Act, 2023",
+      "principle": "Security safeguards and accountability",
+      "obligation": "Prevent unauthorized access and account compromise",
+      "action": "Rotate exposed tokens",
+      "reason": "Prevents unauthorized access"
     },
     {
-      "source_file": "..\\demo_data\\squirrel.jpg",
-      "kind": "camera_make",
-      "category": "device",
-      "action": "review file and remove unnecessary personal data"
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "category": "credentials",
+      "act": "DPDP Act, 2023",
+      "principle": "Security safeguards and accountability",
+      "obligation": "Prevent unauthorized access and account compromise",
+      "action": "Rotate exposed tokens",
+      "reason": "Prevents unauthorized access"
     },
     {
-      "source_file": "..\\demo_data\\squirrel.jpg",
-      "kind": "camera_model",
-      "category": "device",
-      "action": "review file and remove unnecessary personal data"
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "category": "credentials",
+      "act": "DPDP Act, 2023",
+      "principle": "Security safeguards and accountability",
+      "obligation": "Prevent unauthorized access and account compromise",
+      "action": "Rotate exposed tokens",
+      "reason": "Prevents unauthorized access"
     },
     {
-      "source_file": "..\\demo_data\\squirrel.jpg",
-      "kind": "timestamp",
-      "category": "behavioral",
-      "action": "review file and remove unnecessary personal data"
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "category": "credentials",
+      "act": "DPDP Act, 2023",
+      "principle": "Security safeguards and accountability",
+      "obligation": "Prevent unauthorized access and account compromise",
+      "action": "Rotate exposed tokens",
+      "reason": "Prevents unauthorized access"
     },
     {
-      "source_file": "..\\demo_data\\squirrel.jpg",
-      "kind": "software",
-      "category": "device",
-      "action": "review file and remove unnecessary personal data"
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "category": "credentials",
+      "act": "DPDP Act, 2023",
+      "principle": "Security safeguards and accountability",
+      "obligation": "Prevent unauthorized access and account compromise",
+      "action": "Rotate exposed tokens",
+      "reason": "Prevents unauthorized access"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "category": "credentials",
+      "act": "DPDP Act, 2023",
+      "principle": "Security safeguards and accountability",
+      "obligation": "Prevent unauthorized access and account compromise",
+      "action": "Rotate exposed tokens",
+      "reason": "Prevents unauthorized access"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "category": "credentials",
+      "act": "DPDP Act, 2023",
+      "principle": "Security safeguards and accountability",
+      "obligation": "Prevent unauthorized access and account compromise",
+      "action": "Rotate exposed tokens",
+      "reason": "Prevents unauthorized access"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "category": "credentials",
+      "act": "DPDP Act, 2023",
+      "principle": "Security safeguards and accountability",
+      "obligation": "Prevent unauthorized access and account compromise",
+      "action": "Rotate exposed tokens",
+      "reason": "Prevents unauthorized access"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "category": "credentials",
+      "act": "DPDP Act, 2023",
+      "principle": "Security safeguards and accountability",
+      "obligation": "Prevent unauthorized access and account compromise",
+      "action": "Rotate exposed tokens",
+      "reason": "Prevents unauthorized access"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "category": "credentials",
+      "act": "DPDP Act, 2023",
+      "principle": "Security safeguards and accountability",
+      "obligation": "Prevent unauthorized access and account compromise",
+      "action": "Rotate exposed tokens",
+      "reason": "Prevents unauthorized access"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "category": "credentials",
+      "act": "DPDP Act, 2023",
+      "principle": "Security safeguards and accountability",
+      "obligation": "Prevent unauthorized access and account compromise",
+      "action": "Rotate exposed tokens",
+      "reason": "Prevents unauthorized access"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "category": "credentials",
+      "act": "DPDP Act, 2023",
+      "principle": "Security safeguards and accountability",
+      "obligation": "Prevent unauthorized access and account compromise",
+      "action": "Rotate exposed tokens",
+      "reason": "Prevents unauthorized access"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "category": "credentials",
+      "act": "DPDP Act, 2023",
+      "principle": "Security safeguards and accountability",
+      "obligation": "Prevent unauthorized access and account compromise",
+      "action": "Rotate exposed tokens",
+      "reason": "Prevents unauthorized access"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "category": "credentials",
+      "act": "DPDP Act, 2023",
+      "principle": "Security safeguards and accountability",
+      "obligation": "Prevent unauthorized access and account compromise",
+      "action": "Rotate exposed tokens",
+      "reason": "Prevents unauthorized access"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "category": "credentials",
+      "act": "DPDP Act, 2023",
+      "principle": "Security safeguards and accountability",
+      "obligation": "Prevent unauthorized access and account compromise",
+      "action": "Rotate exposed tokens",
+      "reason": "Prevents unauthorized access"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "category": "credentials",
+      "act": "DPDP Act, 2023",
+      "principle": "Security safeguards and accountability",
+      "obligation": "Prevent unauthorized access and account compromise",
+      "action": "Rotate exposed tokens",
+      "reason": "Prevents unauthorized access"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "category": "credentials",
+      "act": "DPDP Act, 2023",
+      "principle": "Security safeguards and accountability",
+      "obligation": "Prevent unauthorized access and account compromise",
+      "action": "Rotate exposed tokens",
+      "reason": "Prevents unauthorized access"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "category": "credentials",
+      "act": "DPDP Act, 2023",
+      "principle": "Security safeguards and accountability",
+      "obligation": "Prevent unauthorized access and account compromise",
+      "action": "Rotate exposed tokens",
+      "reason": "Prevents unauthorized access"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "category": "credentials",
+      "act": "DPDP Act, 2023",
+      "principle": "Security safeguards and accountability",
+      "obligation": "Prevent unauthorized access and account compromise",
+      "action": "Rotate exposed tokens",
+      "reason": "Prevents unauthorized access"
+    },
+    {
+      "source_file": "attention_is_all_you_need.pdf",
+      "kind": "token",
+      "category": "credentials",
+      "act": "DPDP Act, 2023",
+      "principle": "Security safeguards and accountability",
+      "obligation": "Prevent unauthorized access and account compromise",
+      "action": "Rotate exposed tokens",
+      "reason": "Prevents unauthorized access"
     }
   ]
-=======
-    "summary": {
-        "total_files": 4,
-        "total_findings": 6
-    },
-    "risk_score": 38,
-    "risk_level": "MEDIUM",
-    "digital_twin": {
-        "traveler": false,
-        "student": true,
-        "financial_activity": "HIGH",
-        "profile": "Social / Active User"
-    },
-    "attack_paths": [
-        "Account Recovery Risk"
-    ],
-    "recommendations": [
-        "Encrypt sensitive documents",
-        "Enable 2FA on linked accounts"
-    ]
->>>>>>> 155a4fb3eddbbb44466d3dd42b55385904ae957a
 }

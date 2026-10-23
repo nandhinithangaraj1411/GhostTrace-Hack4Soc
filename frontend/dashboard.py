@@ -1,10 +1,20 @@
 import streamlit as st
 import json
+from pathlib import Path
 
 st.set_page_config(layout="wide")
 
 # Load analysis file
-with open("shared/analysis.json", "r") as f:
+ANALYSIS_PATH = Path(__file__).resolve().parent.parent / "shared" / "analysis.json"
+
+if not ANALYSIS_PATH.exists():
+    st.warning(
+        "No scan results yet. Run `python main.py` from the project root "
+        "to generate shared/analysis.json, then reload this page."
+    )
+    st.stop()
+
+with open(ANALYSIS_PATH, "r", encoding="utf-8") as f:
     data = json.load(f)
 
 # Sidebar Navigation
@@ -20,6 +30,14 @@ if page == "Dashboard":
 
     st.title("GhostTrace")
     st.subheader("Local privacy forensics dashboard")
+
+    meta = data.get("scan_meta", {})
+    if meta:
+        docs = [d.get("source_file", "") for d in data.get("document_results", [])]
+        st.caption(
+            f"Showing latest scan ({meta.get('source', 'unknown')}) - "
+            f"{len(docs)} document(s): {', '.join(docs)}"
+        )
 
     c1, c2, c3, c4 = st.columns(4)
 
@@ -93,3 +111,8 @@ elif page == "Scan":
     )
 
     st.code("python main.py")
+
+    st.info(
+        "To scan your own documents, use the upload app: "
+        "`streamlit run frontend/app.py`"
+    )
